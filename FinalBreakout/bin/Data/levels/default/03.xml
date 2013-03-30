@@ -1,0 +1,9 @@
+﻿<Breakout version="1.0.0.0">
+  <Level blockStyle="10" backStyle="1">
+    <Name>3</Name>
+    <Author>Mike Falcone</Author>
+    <RowData>0 6 5 4 3 2 3 4 5 6</RowData>
+    <EmptyBlocks>15 16 17 18 29 30 31 43 44 57 85 99 100 113 114 115 127 128 129 130</EmptyBlocks>
+    <HighScores>---:0,---:0,---:0,---:0,---:0,</HighScores>
+  </Level>
+</Breakout>

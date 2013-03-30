@@ -1,0 +1,473 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+FinalBreakout
+</name>
+</assembly>
+<members>
+<member name="M:FinalBreakout.LevelMakerForm.Render">
+	<summary>
+ Renders the level preview.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.LevelMakerForm.ChangeRowValue(System.Int32,System.Int32)">
+	<summary>
+ Changes the value of the specified row to the specified value.
+ </summary>
+	<param name="rowIndex"></param>
+	<param name="newValue"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.LevelMakerForm.PreviewBox_MouseEventHandler(System.Object,System.Windows.Forms.MouseEventArgs)">
+	<summary>
+ Toggle whether clicked block is empty.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.LevelMakerForm.ResetButton_Click(System.Object,System.EventArgs)">
+	<summary>
+ Resets the designer.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BlockSet.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)">
+	<summary>
+ Constructs a set of empty blocks.
+ </summary>
+	<param name="x">the x position to be the center of the set</param>
+	<param name="y">the y position of the top of the set</param>
+	<param name="maxRows">the maximum number of rows allowed</param>
+	<param name="maxBlocksPerRow">the maximum number of blocks allowed per row</param>
+	<param name="blockWidth">width of each block</param>
+	<param name="blockHeight">height of each block</param>
+	<param name="showWhenEmpty">set true to indicate that each block should still be visible when empty</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BlockSet.SetRowValue(System.Int32,System.Int32)">
+	<summary>
+ Sets the size of the specified row to the specified value.
+ </summary>
+	<param name="rowIndex">the index of the row to change</param>
+	<param name="value">the number of blocks of the row</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BlockSet.Draw(System.Drawing.Bitmap@,System.Drawing.Graphics@)">
+	<summary>
+ Renders each row in the set of blocks.
+ </summary>
+	<param name="blockImage">image to use for each block</param>
+	<param name="g">graphics object used to render the set</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BlockSet.DestroyIfCollidesWith(FinalBreakout.GameObject@)">
+	<summary>
+ Destroy a single block colliding with the specified game object.
+ </summary>
+	<param name="o">game object with which to test collision</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BlockSet.ToggleEmptyIfCollidesWith(FinalBreakout.GameObject@)">
+	<summary>
+ Toggles the Empty property of a single block colliding with the specified object.
+ </summary>
+	<param name="o">game object with which to test collision</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BlockSet.CalculateDimensions">
+	<summary>
+ Recalculates the blockset's width and height.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.Block.Empty">
+	<summary>
+ Gets or sets whether the block is empty. A block is empty until initialized.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Block.#ctor(System.Int32,System.Int32,System.Boolean)">
+	<summary>
+ Constructs a new block object.
+ </summary>
+	<param name="blockWidth">the width of the block object</param>
+	<param name="blockHeight">the height of the block object</param>
+	<param name="showWhenEmpty">set true to indicate that the block should still be visible when empty</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Block.Draw(System.Drawing.Bitmap@,System.Drawing.Graphics@)">
+	<summary>
+ Shadows the draw method to make sure the block is not drawn if it is empty.
+ </summary>
+	<param name="image"></param>
+	<param name="g"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Block.Initialize(System.Int32,System.Int32)">
+	<summary>
+ Initializes the block and moves it to the specified location.
+ </summary>
+	<param name="x">x position of the block</param>
+	<param name="y">y position of the block</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Block.Destroy">
+	<summary>
+ Destroys the block.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Block.ToggleEmpty">
+	<summary>
+ Toggles the value of the Empty property without affecting collision detection.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.BlockRow.MaximumBlocks">
+	<summary>
+ Gets the maximum number of blocks in the row.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.BlockRow.MaxBlockIndex">
+	<summary>
+ Get the maximum index of the block array.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BlockRow.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)">
+	<summary>
+ Constructs a new row of empty blocks.
+ </summary>
+	<param name="x">x position to be the center of the row</param>
+	<param name="y">y position of the top of the row</param>
+	<param name="maxBlocks">the maximum number of blocks allowed in the row</param>
+	<param name="blockWidth">width of each block</param>
+	<param name="blockHeight">height of each block</param>
+	<param name="showWhenEmpty">set true to indicate that each block should still be visible when empty</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BlockRow.SetMaximumBlocks(System.Int32)">
+	<summary>
+ Sets the maximum number of blocks to the specified value.
+ </summary>
+	<param name="numBlocks">number of blocks to show</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BlockRow.Draw(System.Drawing.Bitmap@,System.Drawing.Graphics@)">
+	<summary>
+ Renders each block in the row.
+ </summary>
+	<param name="blockImage">image to use for each block</param>
+	<param name="g">graphics object used to render the set</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BlockRow.DestroyIfCollidesWith(FinalBreakout.GameObject@)">
+	<summary>
+ Destroy a single block colliding with the specified game object.
+ </summary>
+	<param name="o">game object with which to test collision</param>
+	<returns>true if any block is destroyed, false otherwise</returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BlockRow.ToggleEmptyIfCollidesWith(FinalBreakout.GameObject@)">
+	<summary>
+ Toggles the Empty property of a single block colliding with the specified object.
+ </summary>
+	<param name="o">game object with which to test collision</param>
+	<returns>true if any block is toggled, false otherwise</returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BlockRow.ReformRow">
+	<summary>
+ Creates MaximumBlocks number of blocks and centers the row.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.GameObject.X">
+	<summary>
+ Gets the X position of the object.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.GameObject.Y">
+	<summary>
+ Gets the Y position of the object.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.GameObject.DefaultX">
+	<summary>
+ Gets the default X position of the object. Only derived classes may access this property.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.GameObject.DefaultY">
+	<summary>
+ Gets the default Y position of the object. Only derived classes may access this property.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.GameObject.Width">
+	<summary>
+ Gets the width of the object. Only derived classes may change this property.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.GameObject.Height">
+	<summary>
+ Gets the height of the object. Only derived classes may change this property.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.GameObject.Collidable">
+	<summary>
+ Gets or sets whether the object can collide with other collidable objects.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.GameObject.BoundRectangle">
+	<summary>
+ Gets a rectangle describing the bounds of the object.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.GameObject.Texture">
+	<summary>
+ Gets or sets the texture used to render the object. Only derived classes may access this property.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.GameObject.BorderPen">
+	<summary>
+ Gets or sets the pen used to render the object's border. Only derived classes may access this property.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.GameObject.HasTexture">
+	<summary>
+ Returns whether or not the object has a texture available for rendering.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.GameObject.Visible">
+	<summary>
+ Gets or sets whether the object is visible.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.GameObject.BorderWidth">
+	<summary>
+ Gets or sets the width of the object's border.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.GameObject.BorderColor">
+	<summary>
+ Gets or sets the object's border color.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.GameObject.BorderVisible">
+	<summary>
+ Gets or sets whether the object's border is displayed.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.GameObject.#ctor">
+	<summary>
+ Constructs an invisible, non-collidable GameObject at 0,0
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.GameObject.#ctor(System.Int32,System.Int32)">
+	<summary>
+ Constructs an invisible GameObject with a position in the game.
+ </summary>
+	<param name="x">x position</param>
+	<param name="y">y position</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.GameObject.#ctor(System.Int32,System.Int32,System.Drawing.Bitmap,System.Boolean,System.Boolean)">
+	<summary>
+ Constructs a drawable GameObject with a position in the game and a size.
+ </summary>
+	<param name="x">x position</param>
+	<param name="y">y position</param>
+	<param name="texture">the image to display when drawing the object</param>
+	<param name="isVisible">set true to indicate that this object will be visible</param>
+	<param name="isCenteredH">set true to indicate that the object will be created centered around the specified X</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.GameObject.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Drawing.Bitmap,System.Boolean,System.Boolean)">
+	<summary>
+ Constructs a drawable GameObject with a position in the game and a size.
+ </summary>
+	<param name="x">x position</param>
+	<param name="y">y position</param>
+	<param name="width">width of the object in pixels</param>
+	<param name="height">height of the object in pixels</param>
+	<param name="texture">the image to display when drawing the object</param>
+	<param name="isVisible">set true to indicate that this object will be visible</param>
+	<param name="isCenteredH">set true to indicate that the object will be created centered around the specified X</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.GameObject.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean,System.Boolean)">
+	<summary>
+ Constructs a GameObject with a position in the game and a size.
+ </summary>
+	<param name="x">x position</param>
+	<param name="y">y position</param>
+	<param name="objectWidth">width of the object in pixels</param>
+	<param name="objectHeight">height of the object in pixels</param>
+	<param name="isVisible">set true to indicate that this object will be visible</param>
+	<param name="isCenteredH">set true to indicate that the object will be created centered around the specified X</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.GameObject.CenterH(System.Object)">
+	<summary>
+ Center the object horizontally at the specified x position.
+ </summary>
+	<param name="centerX">the x position at which to center the object</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.GameObject.CenterV(System.Object)">
+	<summary>
+ Center the object vertically at the specified y position.
+ </summary>
+	<param name="centerY">the y position at which to center the object</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.GameObject.Reset">
+	<summary>
+ Resets the object to its default position.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.GameObject.Show">
+	<summary>
+ Makes the object visible.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.GameObject.Hide">
+	<summary>
+ Makes the object invisible.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.GameObject.Draw(System.Drawing.Graphics@,System.Boolean)">
+	<summary>
+ Renders the object.
+ </summary>
+	<param name="g">the graphics object used for rendering the game object</param>
+	<param name="borderOnly">set true to render only the object's border</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.GameObject.Draw(System.Drawing.Bitmap@,System.Drawing.Graphics@,System.Boolean)">
+	<summary>
+ Renders the object using a reference to the specified image.
+ </summary>
+	<param name="image">the image used to render the object</param>
+	<param name="g">the graphics object used for rendering the game object</param>
+	<param name="borderOnly">set true to render only the object's border</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.GameObject.CollidesWith(FinalBreakout.GameObject@)">
+	<summary>
+ Tests whether this object collides with the specified game object.
+ </summary>
+	<param name="o">the object with which to test collision</param>
+	<returns>true if the objects collide, false otherwise</returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:FinalBreakout.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:FinalBreakout.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="P:FinalBreakout.Breakout.BlockImageMaximum">
+	<summary>
+ Gets the maximum index of available block images.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.Breakout.BackgroundImageMaximum">
+	<summary>
+ Gets the maximum index of available background images.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.Breakout.BlocksPerRow">
+	<summary>
+ Gets the number of blocks per blockrow.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.Breakout.RowsPerSet">
+	<summary>
+ Gets the number of rows per blockset.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.Breakout.BlockWidth">
+	<summary>
+ Gets the width of the block objects.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.Breakout.BlockHeight">
+	<summary>
+ Gets the height of the block objects.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.Breakout.CanvasWidth">
+	<summary>
+ Gets the width of the game canvas.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.Breakout.CanvasHeight">
+	<summary>
+ Gets the height of the game canvas.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Breakout.GetBlockImage(System.Int32)">
+	<summary>
+ Gets the block image at the specified index.
+ </summary>
+	<param name="index">index of the block image</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Breakout.GetBackgroundImage(System.Int32)">
+	<summary>
+ Gets the background image at the specified index.
+ </summary>
+	<param name="index">index of the background image</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Breakout.Initialize">
+	<summary>
+ Initialize the module. This must be called before the module is used.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Breakout.InitBlocks">
+	<summary>
+ Initialize the block images and properties.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Breakout.InitBackground">
+	<summary>
+ Initializes the background images and canvas properties.
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

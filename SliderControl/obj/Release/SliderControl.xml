@@ -1,0 +1,67 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SliderControl
+</name>
+</assembly>
+<members>
+<member name="P:SliderControl.NumberSlider.MaximumValue">
+	<summary>
+ Gets or sets the maximum value that the slider can be.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:SliderControl.NumberSlider.MinimumValue">
+	<summary>
+ Gets or sets the minimum value that the slider can be.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:SliderControl.NumberSlider.Value">
+	<summary>
+ Gets or sets the current value of the slider.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:SliderControl.NumberSlider.SliderTabStop">
+	<summary>
+ Gets or sets whether the slider bar can receive tab focus.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:SliderControl.NumberSlider.ShowTicks">
+	<summary>
+ Gets or sets whether to show ticks under the slider.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:SliderControl.NumberSlider.#ctor">
+	<summary>
+ Constructs a new number slider with a maximum value of 10.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SliderControl.NumberSlider.ValidateInput(System.String)">
+	<summary>
+ Convert an input string to a valid value.
+ </summary>
+	<param name="input">Text to validate.</param>
+	<returns>The integer created from the string if it is numeric. If not numeric, the current
+ value of the control is returned. If the string is numeric but the value is out of bounds,
+ the maximum value is returned.</returns>
+	<remarks></remarks>
+</member><member name="M:SliderControl.NumberSlider.ValidateInput(System.Int32)">
+	<summary>
+ Convert an input integer to a valid integer by verifying that it is within bounds.
+ </summary>
+	<param name="input">Integer to validate.</param>
+	<returns>a valid integer confined to [MinimumValue, MaximumValue]</returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

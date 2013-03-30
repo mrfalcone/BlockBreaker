@@ -1,0 +1,20 @@
+C:\Users\Mike\Documents\Visual Studio 2008\Projects\SliderControl\SliderControl\bin\Release\SliderControl.dll
+C:\Users\Mike\Documents\Visual Studio 2008\Projects\SliderControl\SliderControl\bin\Release\SliderControl.pdb
+C:\Users\Mike\Documents\Visual Studio 2008\Projects\SliderControl\SliderControl\bin\Release\SliderControl.xml
+C:\Users\Mike\Documents\Visual Studio 2008\Projects\SliderControl\SliderControl\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Mike\Documents\Visual Studio 2008\Projects\SliderControl\SliderControl\obj\Release\SliderControl.Resources.resources
+C:\Users\Mike\Documents\Visual Studio 2008\Projects\SliderControl\SliderControl\obj\Release\SliderControl.NumberSlider.resources
+C:\Users\Mike\Documents\Visual Studio 2008\Projects\SliderControl\SliderControl\obj\Release\SliderControl.vbproj.GenerateResource.Cache
+C:\Users\Mike\Documents\Visual Studio 2008\Projects\SliderControl\SliderControl\obj\Release\SliderControl.dll
+C:\Users\Mike\Documents\Visual Studio 2008\Projects\SliderControl\SliderControl\obj\Release\SliderControl.xml
+C:\Users\Mike\Documents\Visual Studio 2008\Projects\SliderControl\SliderControl\obj\Release\SliderControl.pdb
+C:\Users\Mike\Desktop\CSIS 3726 Final\Breakout Source\FinalBreakout\bin\SliderControl.dll
+C:\Users\Mike\Desktop\CSIS 3726 Final\Breakout Source\FinalBreakout\bin\SliderControl.pdb
+C:\Users\Mike\Desktop\CSIS 3726 Final\Breakout Source\FinalBreakout\bin\SliderControl.xml
+C:\Users\Mike\Desktop\CSIS 3726 Final\Breakout Source\SliderControl\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Mike\Desktop\CSIS 3726 Final\Breakout Source\SliderControl\obj\Release\SliderControl.Resources.resources
+C:\Users\Mike\Desktop\CSIS 3726 Final\Breakout Source\SliderControl\obj\Release\SliderControl.NumberSlider.resources
+C:\Users\Mike\Desktop\CSIS 3726 Final\Breakout Source\SliderControl\obj\Release\SliderControl.vbproj.GenerateResource.Cache
+C:\Users\Mike\Desktop\CSIS 3726 Final\Breakout Source\SliderControl\obj\Release\SliderControl.dll
+C:\Users\Mike\Desktop\CSIS 3726 Final\Breakout Source\SliderControl\obj\Release\SliderControl.xml
+C:\Users\Mike\Desktop\CSIS 3726 Final\Breakout Source\SliderControl\obj\Release\SliderControl.pdb

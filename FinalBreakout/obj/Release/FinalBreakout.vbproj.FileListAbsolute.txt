@@ -1,0 +1,51 @@
+C:\Users\Mike\Documents\Visual Studio 2008\Projects\FinalBreakout\FinalBreakout\bin\Release\FinalBreakout.exe
+C:\Users\Mike\Documents\Visual Studio 2008\Projects\FinalBreakout\FinalBreakout\bin\Release\FinalBreakout.pdb
+C:\Users\Mike\Documents\Visual Studio 2008\Projects\FinalBreakout\FinalBreakout\bin\Release\FinalBreakout.xml
+C:\Users\Mike\Documents\Visual Studio 2008\Projects\FinalBreakout\FinalBreakout\bin\Release\SliderControl.dll
+C:\Users\Mike\Documents\Visual Studio 2008\Projects\FinalBreakout\FinalBreakout\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Mike\Documents\Visual Studio 2008\Projects\FinalBreakout\FinalBreakout\obj\Release\FinalBreakout.LevelMakerForm.resources
+C:\Users\Mike\Documents\Visual Studio 2008\Projects\FinalBreakout\FinalBreakout\obj\Release\FinalBreakout.MainForm.resources
+C:\Users\Mike\Documents\Visual Studio 2008\Projects\FinalBreakout\FinalBreakout\obj\Release\FinalBreakout.Resources.resources
+C:\Users\Mike\Documents\Visual Studio 2008\Projects\FinalBreakout\FinalBreakout\obj\Release\FinalBreakout.vbproj.GenerateResource.Cache
+C:\Users\Mike\Documents\Visual Studio 2008\Projects\FinalBreakout\FinalBreakout\obj\Release\FinalBreakout.exe
+C:\Users\Mike\Documents\Visual Studio 2008\Projects\FinalBreakout\FinalBreakout\obj\Release\FinalBreakout.xml
+C:\Users\Mike\Documents\Visual Studio 2008\Projects\FinalBreakout\FinalBreakout\obj\Release\FinalBreakout.pdb
+C:\Users\Mike\Breakout\FinalBreakout\bin\Breakout.exe.config
+C:\Users\Mike\Breakout\FinalBreakout\bin\Breakout.exe.manifest
+C:\Users\Mike\Breakout\FinalBreakout\bin\Breakout.application
+C:\Users\Mike\Breakout\FinalBreakout\bin\Breakout.exe
+C:\Users\Mike\Breakout\FinalBreakout\bin\Breakout.xml
+C:\Users\Mike\Breakout\FinalBreakout\bin\SliderControl.pdb
+C:\Users\Mike\Breakout\FinalBreakout\bin\SliderControl.xml
+C:\Users\Mike\Breakout\FinalBreakout\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Mike\Breakout\FinalBreakout\obj\Release\FinalBreakout.AboutForm.resources
+C:\Users\Mike\Breakout\FinalBreakout\obj\Release\FinalBreakout.CustomLevelsForm.resources
+C:\Users\Mike\Breakout\FinalBreakout\obj\Release\FinalBreakout.HighScoresForm.resources
+C:\Users\Mike\Breakout\FinalBreakout\obj\Release\FinalBreakout.LevelDesignerForm.resources
+C:\Users\Mike\Breakout\FinalBreakout\obj\Release\FinalBreakout.MainForm.resources
+C:\Users\Mike\Breakout\FinalBreakout\obj\Release\FinalBreakout.NewScoreEntryForm.resources
+C:\Users\Mike\Breakout\FinalBreakout\obj\Release\FinalBreakout.Resources.resources
+C:\Users\Mike\Breakout\FinalBreakout\obj\Release\FinalBreakout.vbproj.GenerateResource.Cache
+C:\Users\Mike\Breakout\FinalBreakout\obj\Release\Breakout.exe.manifest
+C:\Users\Mike\Breakout\FinalBreakout\obj\Release\Breakout.application
+C:\Users\Mike\Breakout\FinalBreakout\obj\Release\Breakout.exe
+C:\Users\Mike\Breakout\FinalBreakout\obj\Release\Breakout.xml
+C:\Users\Mike\Desktop\CSIS 3726 Final\Breakout Source\FinalBreakout\bin\Breakout.exe.manifest
+C:\Users\Mike\Desktop\CSIS 3726 Final\Breakout Source\FinalBreakout\bin\Breakout.application
+C:\Users\Mike\Desktop\CSIS 3726 Final\Breakout Source\FinalBreakout\bin\Breakout.exe
+C:\Users\Mike\Desktop\CSIS 3726 Final\Breakout Source\FinalBreakout\bin\Breakout.xml
+C:\Users\Mike\Desktop\CSIS 3726 Final\Breakout Source\FinalBreakout\bin\SliderControl.pdb
+C:\Users\Mike\Desktop\CSIS 3726 Final\Breakout Source\FinalBreakout\bin\SliderControl.xml
+C:\Users\Mike\Desktop\CSIS 3726 Final\Breakout Source\FinalBreakout\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Mike\Desktop\CSIS 3726 Final\Breakout Source\FinalBreakout\obj\Release\FinalBreakout.AboutForm.resources
+C:\Users\Mike\Desktop\CSIS 3726 Final\Breakout Source\FinalBreakout\obj\Release\FinalBreakout.CustomLevelsForm.resources
+C:\Users\Mike\Desktop\CSIS 3726 Final\Breakout Source\FinalBreakout\obj\Release\FinalBreakout.HighScoresForm.resources
+C:\Users\Mike\Desktop\CSIS 3726 Final\Breakout Source\FinalBreakout\obj\Release\FinalBreakout.LevelDesignerForm.resources
+C:\Users\Mike\Desktop\CSIS 3726 Final\Breakout Source\FinalBreakout\obj\Release\FinalBreakout.MainForm.resources
+C:\Users\Mike\Desktop\CSIS 3726 Final\Breakout Source\FinalBreakout\obj\Release\FinalBreakout.NewScoreEntryForm.resources
+C:\Users\Mike\Desktop\CSIS 3726 Final\Breakout Source\FinalBreakout\obj\Release\FinalBreakout.Resources.resources
+C:\Users\Mike\Desktop\CSIS 3726 Final\Breakout Source\FinalBreakout\obj\Release\FinalBreakout.vbproj.GenerateResource.Cache
+C:\Users\Mike\Desktop\CSIS 3726 Final\Breakout Source\FinalBreakout\obj\Release\Breakout.exe.manifest
+C:\Users\Mike\Desktop\CSIS 3726 Final\Breakout Source\FinalBreakout\obj\Release\Breakout.application
+C:\Users\Mike\Desktop\CSIS 3726 Final\Breakout Source\FinalBreakout\obj\Release\Breakout.exe
+C:\Users\Mike\Desktop\CSIS 3726 Final\Breakout Source\FinalBreakout\obj\Release\Breakout.xml

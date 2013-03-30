@@ -1,0 +1,2985 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Breakout
+</name>
+</assembly>
+<members>
+<member name="P:FinalBreakout.BreakoutDisplay.Visible">
+	<summary>
+ Gets or sets a property indicating whether the display elements are displayed. If false,
+ only level and score labels will be displayed.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.BreakoutDisplay.Width">
+	<summary>
+ Gets or sets the width of the display.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.BreakoutDisplay.Height">
+	<summary>
+ Gets or sets the height of the display.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.BreakoutDisplay.Size">
+	<summary>
+ Gets or sets the size of the display.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.BreakoutDisplay.CanvasSpace">
+	<summary>
+ Gets a rectangle describing the size and position of the game canvas.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.BreakoutDisplay.Bounds">
+	<summary>
+ Returns a rectangle describing the size and location of the display.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.BreakoutDisplay.ShowCanvasSpaceBorder">
+	<summary>
+ Gets or sets a value indicating whether to draw a border around the canvas space.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.BreakoutDisplay.ShowAuthor">
+	<summary>
+ Gets or sets a value indicating whether or not the level author will be shown.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.BreakoutDisplay.ShowPowerup">
+	<summary>
+ Gets or sets a value indicating whether to show an active powerup.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.BreakoutDisplay.ShowFPS">
+	<summary>
+ Gets or sets a value indicating whether to show the FPS.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.BreakoutDisplay.ShowScoreMultiplier">
+	<summary>
+ Gets or sets a value indicating whether to show the score multiplier text.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.BreakoutDisplay.BlockImage">
+	<summary>
+ Gets or sets the image used to render the block picture.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.BreakoutDisplay.MinimumSize">
+	<summary>
+ Gets the minimum size the display may be.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutDisplay.CalculateMinimumSize">
+	<summary>
+ Determines the minimum size of the display based on the size of the game canvas.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutDisplay.SetAspectRatio(System.Double)">
+	<summary>
+ Sets the aspect ratio of the display to the specified value.
+ </summary>
+	<param name="ratio">ratio of width over height to set the display to</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutDisplay.SetScore(System.Int32,System.Boolean)">
+	<summary>
+ Sets the specified number of points to be displayed as the score.
+ </summary>
+	<param name="pointAmount">the score to show</param>
+	<param name="countTo">set true to indicate that the point value will be counted to</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutDisplay.SetScoreMultiplier(System.Int32,System.Boolean)">
+	<summary>
+ Sets the score multiplier to the specified value.
+ </summary>
+	<param name="multiplier">the value of the score multiplier</param>
+	<param name="animate">set true to indicate that an animation will be performed when set</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutDisplay.SetBallsRemaining(System.Int32,System.Boolean)">
+	<summary>
+ Sets the number of balls remaining to the specified value.
+ </summary>
+	<param name="remaining">the number of balls remaining</param>
+	<param name="animate">set true to indicate that an animation will be performed when set</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutDisplay.SetBlocksRemaining(System.Int32,System.Boolean)">
+	<summary>
+ Sets the number of blocks remaining to the specified value.
+ </summary>
+	<param name="remaining">the number of blocks remaining</param>
+	<param name="animate">set true to indicate that an animation will be performed when set</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutDisplay.SetPowerupImage(System.Drawing.Bitmap)">
+	<summary>
+ Sets the image to be displayed for the active powerup.
+ </summary>
+	<param name="image">the image of the powerup</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutDisplay.SetPowerupTime(System.Int32)">
+	<summary>
+ Sets the number of seconds remaining for the powerup to the specified number.
+ </summary>
+	<param name="secs">the number of seconds remaining for the active powerup</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutDisplay.SetLevelName(System.String,System.Boolean)">
+	<summary>
+ Sets the name of the level to the specified string.
+ </summary>
+	<param name="levelName">the name of the level</param>
+	<param name="animate">set true to indicate that an animation will be performed when set</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutDisplay.SetAuthorName(System.String,System.Boolean)">
+	<summary>
+ Sets the name of the level's author to the specified string.
+ </summary>
+	<param name="authorName">the name of the author</param>
+	<param name="animate">set true to indicate that an animation will be performed when set</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutDisplay.SetFPS(System.Int32)">
+	<summary>
+ Sets the framerate of the breakout game.
+ </summary>
+	<param name="fps">frames per second value</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutDisplay.FormatScore(System.Int32)">
+	<summary>
+ Creates a formatted string representation of the specified score.
+ </summary>
+	<param name="score">the score from which to create the string</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutDisplay.Update(System.Double)">
+	<summary>
+ Updates the display. Must be called when resized.
+ </summary>
+	<param name="secsSinceLastFrame">the fractions of a second since the last call to this method</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutDisplay.Render(System.Drawing.Graphics)">
+	<summary>
+ Renders the current display using the specified graphics object.
+ </summary>
+	<param name="g">the graphics object with which to draw the display</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutDisplay.Render(System.Drawing.Bitmap@)">
+	<summary>
+ Renders the current display onto the specified bitmap.
+ </summary>
+	<param name="image">the bitmap on which to draw the display</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutDisplay.PointToCanvas(System.Drawing.Point)">
+	<summary>
+ Computes the location of the specified point on the display into canvas coordinates.
+ </summary>
+	<param name="displayPoint">point on the display</param>
+	<returns>the point on the canvas</returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutDisplay.PointToDisplay(System.Drawing.Point)">
+	<summary>
+ Computes the location of the specified point on the canvas into display coordinates.
+ </summary>
+	<param name="canvasPoint">point on the canvas</param>
+	<returns>the point on the display</returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutDisplay.AnimateText(FinalBreakout.GameText@)">
+	<summary>
+ Sets the specified text to begin animation.
+ </summary>
+	<param name="text"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutDisplay.UpdatePositions">
+	<summary>
+ Sets the positions of each of the elements of the display.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutDisplay.UpdateCanvasSpace">
+	<summary>
+ Updates the size and position of the canvas to fit properly within the window.
+ </summary>
+	<remarks></remarks>
+</member><member name="E:FinalBreakout.BreakoutGame.ReadyToPresent">
+	<summary>
+ Raised when the game is ready to be rendered.
+ </summary>
+	<remarks></remarks>
+</member><member name="E:FinalBreakout.BreakoutGame.BeginAcceptingInput">
+	<summary>
+ Raised when the game is ready to accept player input.
+ </summary>
+	<remarks></remarks>
+</member><member name="E:FinalBreakout.BreakoutGame.SessionEnded">
+	<summary>
+ Raised when the current session is ended.
+ </summary>
+	<param name="type"></param>
+	<remarks></remarks>
+</member><member name="E:FinalBreakout.BreakoutGame.PaddleSizeChanged">
+	<summary>
+ Raised when the paddle has changed size.
+ </summary>
+	<remarks></remarks>
+</member><member name="E:FinalBreakout.BreakoutGame.EarnedHighScore">
+	<summary>
+ Raised when the player has earned a high score.
+ </summary>
+	<param name="score">the value of the score earned by the player</param>
+	<param name="sessionType">the type of session for which the score was earned</param>
+	<param name="level">the level for which the score was earned, nothing if the game session is normal</param>
+	<remarks></remarks>
+</member><member name="T:FinalBreakout.BreakoutGame.SessionType">
+	<summary>
+ Describes the type of game session that may be played.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.BreakoutGame.IsSessionActive">
+	<summary>
+ Gets a value indicating if a session is active.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.BreakoutGame.CurrentSession">
+	<summary>
+ Gets the type of the currently running session.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.BreakoutGame.AcceptingInput">
+	<summary>
+ Gets whether the game is currently accepting input from the player.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.BreakoutGame.FramesPerSecond">
+	<summary>
+ Gets the number of frames being updated per second.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.BreakoutGame.Paused">
+	<summary>
+ Gets whether the game is paused.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.BreakoutGame.Paddle">
+	<summary>
+ Provides access to the game's paddle.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.BreakoutGame.Ball">
+	<summary>
+ Provides access to the game's primary ball.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutGame.GetCurrentBlockPoints">
+	<summary>
+ Gets the current number of points to award for a block becoming destroyed.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutGame.ExtraBall">
+	<summary>
+ Awards the player an additional ball life.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutGame.#ctor">
+	<summary>
+ Constructs a new game.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutGame.StartRunning">
+	<summary>
+ Begins running the game loop but does not start a game session.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutGame.StopRunning">
+	<summary>
+ Ends the game and stops running the game loop.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutGame.SetAddedBalls(FinalBreakout.Ball[])">
+	<summary>
+ Sets the additional ball array to the specified array of balls.
+ </summary>
+	<param name="balls">the array of balls to use for extra game balls</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutGame.BeginNormalSession">
+	<summary>
+ Begins a new normal game session with default levels.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutGame.BeginCustomSession(FinalBreakout.BreakoutLevel[])">
+	<summary>
+ Begins a new custom game session with the specified levels.
+ </summary>
+	<param name="customLevels">array of custom levels to be played</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutGame.BeginTestSession(FinalBreakout.BreakoutLevel)">
+	<summary>
+ Begins a new test session of the specified level. This is the method that should be used to test a level.
+ </summary>
+	<param name="testLevel">the level to test</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutGame.StopSession">
+	<summary>
+ Ends the current game session.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutGame.SetSessionStatus(System.String)">
+	<summary>
+ Sets the session status text to the specified string.
+ </summary>
+	<param name="statusMsg"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutGame.RenderFrame(System.Drawing.Graphics,System.Drawing.Rectangle)">
+	<summary>
+ Renders the frame inside the specified rectangle using the specified graphics object.
+ </summary>
+	<param name="g">the graphics object with which to draw the current frame</param>
+	<param name="rect">the rectangle in which to draw the frame</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutGame.RenderFrame(System.Drawing.Graphics)">
+	<summary>
+ Renders the frame using the specified graphics object.
+ </summary>
+	<param name="g">the graphics object with which to draw the current frame</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutGame.RenderFrame(System.Drawing.Bitmap@)">
+	<summary>
+ Renders the current frame onto the specified bitmap.
+ </summary>
+	<param name="image">the bitmap on which to draw the current frame</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutGame.Pause">
+	<summary>
+ Pause the game if a session is active.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutGame.Unpause">
+	<summary>
+ Unpause the game if a session is active.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutGame.ActivateSession(FinalBreakout.BreakoutGame.SessionType)">
+	<summary>
+ Activates the specified session type.
+ </summary>
+	<param name="type"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutGame.EndSession">
+	<summary>
+ Ends the current session if there is one in progress.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutGame.StartLevel(System.Int32)">
+	<summary>
+ Starts the level specified by the index.
+ </summary>
+	<param name="index"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutGame.StartLevel(FinalBreakout.BreakoutLevel)">
+	<summary>
+ Starts the specified level.
+ </summary>
+	<param name="level"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutGame.LevelComplete">
+	<summary>
+ Called when all the blocks are empty.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutGame.mLevelIntroText_AnimationComplete">
+	<summary>
+ Begins opening the curtains after the level intro text completes its animation.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutGame.EnterGameLoop">
+	<summary>
+ Enters the main game loop that drives the breakout game.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutGame.OpenCurtains(System.Boolean)">
+	<summary>
+ Causes the curtains to begin opening.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutGame.CloseCurtains(System.Boolean)">
+	<summary>
+ Causes the curtains to begin closing.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutGame.UpdateCurtains(System.Double)">
+	<summary>
+ Updates the positions of the curtains if they are being animated.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutGame.LevelLost">
+	<summary>
+ Called when the player loses the level.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutGame.UpdateSession(System.Double)">
+	<summary>
+ Updates the game session and game objects.
+ </summary>
+	<param name="elapsed"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutGame.HandlePaddleCollision(FinalBreakout.Ball@,FinalBreakout.GameObject.Edge)">
+	<summary>
+ Handles the specified ball's collision with the paddle.
+ </summary>
+	<param name="b"></param>
+	<param name="edge"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutGame.HandleBallOutOfBounds(FinalBreakout.Ball@)">
+	<summary>
+ Called when the specified ball goes out of bounds.
+ </summary>
+	<param name="b"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutGame.mCurrentLevel_BlockDestroyed(FinalBreakout.GameObject@,FinalBreakout.GameObject.Edge,System.Drawing.Rectangle)">
+	<summary>
+ Handles ball collision and awards points when a block is destroyed.
+ </summary>
+	<param name="o"></param>
+	<param name="edgeOfCollision"></param>
+	<param name="blockRect"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutGame.ShowPointText(System.String,System.Drawing.Point,System.Int32)">
+	<summary>
+ Shows the specified text at the specified point.
+ </summary>
+	<param name="text"></param>
+	<param name="p"></param>
+	<param name="index"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutGame.mCurrentLevel_BlockEmpty(System.Drawing.Point,System.Int32)">
+	<summary>
+ Shows point text when a block becomes empty and randomly show powerups.
+ </summary>
+	<param name="blockId"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutGame.mCurrentLevel_BlockSetEmpty">
+	<summary>
+ Ends the level when the entire blockset is destroyed.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutGame.InitPowerups">
+	<summary>
+ Fills the powerups array with random powerups.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutGame.HandlePowerupCollision(FinalBreakout.Powerup)">
+	<summary>
+ Handles paddle collision with the specified powerup.
+ </summary>
+	<param name="p"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutGame.mCurrentPowerup_Activated">
+	<summary>
+ Handles a powerup becoming active.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutGame.mCurrentPowerup_Deactivated">
+	<summary>
+ Handles a powerup becoming deactivated.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutGame.mCurrentPowerup_TimerTick">
+	<summary>
+ Updates the powerup timer display.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutGame.mCurrentPowerup_RequiresDeactivation">
+	<summary>
+ Deactivates the powerup when necessary.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutGame.mPaddle_Resized">
+	<summary>
+ Raise an event when the paddle is resized.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.LevelDesignerForm.LevelDesignerForm_FormClosing(System.Object,System.Windows.Forms.FormClosingEventArgs)">
+	<summary>
+ Prompts the user to save data when the form is closing.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.LevelDesignerForm.LevelMakerForm_Load(System.Object,System.EventArgs)">
+	<summary>
+ Initialize the level designer.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.LevelDesignerForm.ChangeRowValue(System.Int32,System.Int32)">
+	<summary>
+ Changes the value of the specified row to the specified value.
+ </summary>
+	<param name="rowIndex"></param>
+	<param name="newValue"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.LevelDesignerForm.ResetButton_Click(System.Object,System.EventArgs)">
+	<summary>
+ Resets the designer.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.LevelDesignerForm.LevelNameTextBox_Leave(System.Object,System.EventArgs)">
+	<summary>
+ Updates the level's name.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.LevelDesignerForm.AuthorNameTextBox_Leave(System.Object,System.EventArgs)">
+	<summary>
+ Updates the author's name.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.LevelDesignerForm.NewToolStripMenuItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ Handle 'New' click.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.LevelDesignerForm.ExitToolStripMenuItem1_Click(System.Object,System.EventArgs)">
+	<summary>
+ Close the designer.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.LevelDesignerForm.ClearLevel">
+	<summary>
+ Clears all level data.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.LevelDesignerForm.SaveLevel(System.Boolean)">
+	<summary>
+ Prompts the user for a save location and saves the level.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.LevelDesignerForm.LoadLevel">
+	<summary>
+ Prompts the user for a file location and loads the selected level.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.LevelDesignerForm.LoadDesignerToLevel">
+	<summary>
+ Loads the properties and values from the designer to the level object.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.LevelDesignerForm.LoadLevelToDesigner">
+	<summary>
+ Loads the properties and values from the level object into the designer.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.LevelDesignerForm.UpdateNameText">
+	<summary>
+ Updates the level and author name to match the text boxes.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.LevelDesignerForm.SaveToolStripMenuItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ Save handler.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.LevelDesignerForm.SaveAsToolStripMenuItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ Save As handler.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.LevelDesignerForm.OpenToolStripMenuItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ Open handler.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.LevelDesignerForm.DrawTimer_Tick(System.Object,System.EventArgs)">
+	<summary>
+ Redraws the designer when the timer ticks.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.LevelDesignerForm.mLevel_BlockEmpty(System.Drawing.Point,System.Int32)">
+	<summary>
+ Highlights empty blocks if necessary.
+ </summary>
+	<param name="blockLocation"></param>
+	<param name="blockId"></param>
+	<remarks></remarks>.
+
+</member><member name="M:FinalBreakout.LevelDesignerForm.mLevel_BlockSolid(System.Int32)">
+	<summary>
+ Unhighlights solid blocks if necessary.
+ </summary>
+	<param name="blockId"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.LevelDesignerForm.ShowEmptyBlocksToolStripMenuItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ Sets all the empty blocks to either highlighted or unhighlighted based on the checked value.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.LevelDesignerForm.HighlightEmptyBlocks">
+	<summary>
+ Highlights all empty blocks.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.LevelDesignerForm.UnhighlightEmptyBlocks">
+	<summary>
+ Unhighlights all empty blocks.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.LevelDesignerForm.PreviewPictureBox_MouseClick(System.Object,System.Windows.Forms.MouseEventArgs)">
+	<summary>
+ Handle picture box clicks.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.LevelDesignerForm.IsInputValid(System.String,System.Boolean)">
+	<summary>
+ Tests whether or not the specified string is valid text input.
+ </summary>
+	<param name="text"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.LevelDesignerForm.IsLevelValid(System.Boolean)">
+	<summary>
+ Tests whether the level is a valid level and displays a message if not.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.LevelDesignerForm.PlayButton_Click(System.Object,System.EventArgs)">
+	<summary>
+ Runs the level in a test game session.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.ShrinkPaddlePowerup.#ctor">
+	<summary>
+ Constructs a new ShrinkPaddle powerup.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.ShrinkPaddlePowerup.Activate(FinalBreakout.BreakoutGame@)">
+	<summary>
+ Overrides the Activate method to activate the powerup.
+ </summary>
+	<param name="game">reference to the game object activating the powerup</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.ShrinkPaddlePowerup.Deactivate(FinalBreakout.BreakoutGame@)">
+	<summary>
+ Overrides the Deactivate method to deactivate the powerup.
+ </summary>
+	<param name="game">reference to the game object deactivating the powerup</param>
+	<remarks></remarks>
+</member><member name="E:FinalBreakout.BlockSet.BlockEmptied">
+	<summary>
+ Raised when a block becomes empty as the result of a performed action.
+ </summary>
+	<param name="blockLocation">the location of the emptied block in 2d space</param>
+	<param name="blockId">unique id number of the block in the blockset, from [0, MaximumBlocks - 1]</param>
+	<remarks></remarks>
+</member><member name="E:FinalBreakout.BlockSet.BlockDestroyed">
+	<summary>
+ Raised when a block is destroyed by collision.
+ </summary>
+	<param name="o">reference to the object that destroyed the block</param>
+	<param name="edgeOfCollision">the edge nearest the point of collision, if the block was emptied by collision</param>
+	<param name="blockRect">rectangle describing the position and size of the block destroyed</param>
+	<remarks></remarks>
+</member><member name="E:FinalBreakout.BlockSet.BlockFilled">
+	<summary>
+ Raised when an empty block becomes solid as the result of a performed action.
+ </summary>
+	<param name="blockId">unique id number of the block in the blockset, from [0, MaximumBlocks - 1]</param>
+	<remarks></remarks>
+</member><member name="F:FinalBreakout.BlockSet.BlockDescriptor.rowIndex">
+	<summary>
+ The index of the row holding the block.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:FinalBreakout.BlockSet.BlockDescriptor.blockIndex">
+	<summary>
+ The index of the block within the row at rowIndex.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BlockSet.BlockDescriptor.#ctor(System.Int32,System.Int32)">
+	<summary>
+ Constructs a new block descriptor with the specified values.
+ </summary>
+	<param name="row">the index of the row holding the block</param>
+	<param name="block">the index of the block within the row</param>
+	<remarks></remarks>
+</member><member name="T:FinalBreakout.BlockSet.BlockDescriptor">
+	<summary>
+ Describes the location of a block within a blockset.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:FinalBreakout.BlockSet.BlockSetPattern.rowData">
+	<summary>
+ Array of integers where each index represents a row and each integer represents the number of blocks in that row.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:FinalBreakout.BlockSet.BlockSetPattern.emptyBlocks">
+	<summary>
+ Array of unique block ids of empty blocks.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:FinalBreakout.BlockSet.BlockSetPattern">
+	<summary>
+ Describes the blockset's pattern of blocks.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.BlockSet.NumSolidBlocks">
+	<summary>
+ Gets the current number of non-empty blocks contained within the block set.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.BlockSet.MaximumBlocks">
+	<summary>
+ Gets the maximum number of blocks the blockset can hold.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BlockSet.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+	<summary>
+ Constructs a set of empty blocks.
+ </summary>
+	<param name="x">the x position to be the center of the set</param>
+	<param name="y">the y position of the top of the set</param>
+	<param name="maxRows">the maximum number of rows allowed</param>
+	<param name="maxBlocksPerRow">the maximum number of blocks allowed per row</param>
+	<param name="blockWidth">width of each block</param>
+	<param name="blockHeight">height of each block</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BlockSet.SetRowValue(System.Int32,System.Int32)">
+	<summary>
+ Sets the size of the specified row to the specified value.
+ </summary>
+	<param name="rowIndex">the index of the row to change</param>
+	<param name="value">the number of blocks of the row</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BlockSet.GetRowValue(System.Int32)">
+	<summary>
+ Gets the size of the specified row.
+ </summary>
+	<param name="rowIndex">index of the row to get the value of</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BlockSet.Clear">
+	<summary>
+ Clears the set of blocks.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BlockSet.Draw(System.Drawing.Bitmap,System.Drawing.Graphics)">
+	<summary>
+ Renders each row in the set of blocks.
+ </summary>
+	<param name="blockImage">image to use for each block</param>
+	<param name="g">graphics object used to render the set</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BlockSet.GetRowCollidingWith(FinalBreakout.GameObject)">
+	<summary>
+ Gets the index of the row colliding with the specified object.
+ </summary>
+	<param name="o">the object with which to test collision</param>
+	<returns>index of the row colliding with the object, -1 if no collision takes place</returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BlockSet.GetPattern">
+	<summary>
+ Constructs a structure describing the current pattern of this blockset. 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BlockSet.LoadPattern(FinalBreakout.BlockSet.BlockSetPattern,System.Boolean)">
+	<summary>
+ Loads the blocks into a pattern described by the specified structure.
+ </summary>
+	<param name="pattern">structure describing the pattern of the set of blocks</param>
+	<param name="collideEmptyBlocks">set true to indicate that empty blocks will be collidable</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BlockSet.PerformActionIfCollides(FinalBreakout.Block.Action,FinalBreakout.GameObject@)">
+	<summary>
+ Performs the specified action on one block colliding with the specified object, if collision occurs.
+ </summary>
+	<param name="action">the action to perform on a block</param>
+	<param name="o">reference to the object with which to test collision</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BlockSet.PerformActionOnBlock(FinalBreakout.Block.Action,FinalBreakout.BlockSet.BlockDescriptor)">
+	<summary>
+ Performs the specified action on the block specified by the block descriptor.
+ </summary>
+	<param name="action">the action to perform on a block</param>
+	<param name="bd">block descriptor describing the location of the block within the blockset</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BlockSet.PerformActionOnBlock(FinalBreakout.Block.Action,System.Int32)">
+	<summary>
+ Performs the specified action on the block specified by the unique block id.
+ </summary>
+	<param name="action">the action to perform on a block</param>
+	<param name="id">the unique id of the block within the blockset</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BlockSet.GetResponseFromBlockId(FinalBreakout.BlockRow.BlockActionRequest,System.Int32,FinalBreakout.BlockRow.BlockActionResponse@)">
+	<summary>
+ Gets an action response from the specified unique block id.
+ </summary>
+	<param name="request">the requested action description</param>
+	<param name="id">id of the block</param>
+	<param name="response">reference to an action response structure to populate</param>
+	<returns>the index of the row containing the block</returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BlockSet.AnalyzeActionResponse(FinalBreakout.BlockRow.BlockActionResponse,System.Int32)">
+	<summary>
+ Analyzes an action response and reacts.
+ </summary>
+	<param name="response">the response to analyze</param>
+	<param name="rowIndex">the index of the row from which the response originates</param>
+	<returns>true if the action was successful and false otherwise</returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BlockSet.CalculateDimensions">
+	<summary>
+ Recalculates the blockset's width and height.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:FinalBreakout.HighScoresCollection.HighScore.ScoreHolder">
+	<summary>
+ The name of the score holder.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:FinalBreakout.HighScoresCollection.HighScore.ScoreValue">
+	<summary>
+ The high score value.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.HighScoresCollection.HighScore.#ctor(System.String,System.Int32)">
+	<summary>
+ Constructs a new high score.
+ </summary>
+	<param name="holder">the name of the score holder</param>
+	<param name="value">the value of the high score</param>
+	<remarks></remarks>
+</member><member name="T:FinalBreakout.HighScoresCollection.HighScore">
+	<summary>
+ Describes a high score entry.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.HighScoresCollection.Empty">
+	<summary>
+ Returns true if no scores have been added to the collection, false otherwise.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.HighScoresCollection.Scores">
+	<summary>
+ Provides access to the array of high score objects.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.HighScoresCollection.MaxScoreIndex">
+	<summary>
+ Gets the maximum index of the scores in the high scores collection.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.HighScoresCollection.NumScores">
+	<summary>
+ Gets the number of scores in the high scores collection.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.HighScoresCollection.#ctor(System.Int32)">
+	<summary>
+ Constructs an empty collection of high scores.
+ </summary>
+	<param name="maxScores">the maximum number of scores the collection will hold</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.HighScoresCollection.#ctor(System.String,System.Int32)">
+	<summary>
+ Constructs a collection of high scores from the specified string.
+ </summary>
+	<param name="s">the string from which to construct the high scores collection</param>
+	<param name="maxScores">the maximum number of high scores the collection will hold. if -1,
+ the maximum number will be the number of high scores in the specified string.</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.HighScoresCollection.Clear">
+	<summary>
+ Clears the list of scores to default values.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.HighScoresCollection.ToString">
+	<summary>
+ Overrides the ToString method to provide a string representation of the collection of high scores.
+ </summary>
+	<returns>a string representation of the high scores</returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.HighScoresCollection.FromString(System.String)">
+	<summary>
+ Constructs a new high scores collection from a string.
+ </summary>
+	<param name="s">the string from which to construct a high scores collection</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.HighScoresCollection.IsHighScore(System.Int32)">
+	<summary>
+ Tests whether the specified score is a high score.
+ </summary>
+	<param name="score">the score to test</param>
+	<returns>true if the score is a high score, false otherwise</returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.HighScoresCollection.AddNew(System.Int32)">
+	<summary>
+ Adds a new entry in the high scores collection with the specified score value.
+ </summary>
+	<param name="scoreValue">value of the high score to add</param>
+	<returns>the index in the collection of the new high score, or -1 if the score is not a high score</returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.HighScoresCollection.AddNew(FinalBreakout.HighScoresCollection.HighScore)">
+	<summary>
+ Adds the specified high score to the collection of high scores.
+ </summary>
+	<param name="highScore"></param>
+	<returns>the index in the collection of the new high score, or -1 if the score is not a high score</returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.ExtraBallPowerup.#ctor">
+	<summary>
+ Constructs a new ExtraBall powerup.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.ExtraBallPowerup.Activate(FinalBreakout.BreakoutGame@)">
+	<summary>
+ Overrides the Activate method to activate the powerup.
+ </summary>
+	<param name="game">reference to the game object activating the powerup</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.GrowPaddlePowerup.#ctor">
+	<summary>
+ Constructs a new GrowPaddle powerup.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.GrowPaddlePowerup.Activate(FinalBreakout.BreakoutGame@)">
+	<summary>
+ Overrides the Activate method to activate the powerup.
+ </summary>
+	<param name="game">reference to the game object activating the powerup</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.GrowPaddlePowerup.Deactivate(FinalBreakout.BreakoutGame@)">
+	<summary>
+ Overrides the Deactivate method to deactivate the powerup.
+ </summary>
+	<param name="game">reference to the game object deactivating the powerup</param>
+	<remarks></remarks>
+</member><member name="T:FinalBreakout.MoveableObject.Direction">
+	<summary>
+ Describes the direction that an object may be facing or moving.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.MoveableObject.MovementBoundaries">
+	<summary>
+ Gets a rectangle describing the movement boundaries of the object.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.MoveableObject.IsBounded">
+	<summary>
+ Gets whether the object has movement boundaries.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.MoveableObject.MoveSpeed">
+	<summary>
+ Gets the movement speed of the object in pixels-per-second.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.MoveableObject.SpeedMultiplier">
+	<summary>
+ Gets or sets a multiplier used to change the speed of object's movement. Default value is 1.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.MoveableObject.HorizontalDirection">
+	<summary>
+ Gets or sets the horizontal movement direction of the object. Up and Down are not valid directions.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.MoveableObject.VerticalDirection">
+	<summary>
+ Gets or sets the vertical movement direction of the object. Left and Right are not valid directions.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.MoveableObject.#ctor(System.Int32,System.Int32,System.Double)">
+	<summary>
+ Constructs a new moveable object at x,y.
+ </summary>
+	<param name="x">x position of the object</param>
+	<param name="y">y position of the object</param>
+	<param name="moveSpeed">the constant movement speed of the object in pixels-per-second</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.MoveableObject.#ctor(System.Int32,System.Int32,System.Drawing.Rectangle,System.Double)">
+	<summary>
+ Constructs a new moveable object with the specified movement boundaries.
+ </summary>
+	<param name="x">x position of the object</param>
+	<param name="y">y position of the object</param>
+	<param name="moveBounds">describes a rectangle in 2d space that the object will be restricted to</param>
+	<param name="moveSpeed">the constant movement speed of the object in pixels-per-second</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.MoveableObject.#ctor(System.Int32,System.Int32,System.Drawing.Bitmap,System.Double,System.Boolean,System.Boolean)">
+	<summary>
+ Constructs a new moveable object with the specified texture.
+ </summary>
+	<param name="x">x position of the object</param>
+	<param name="y">y position of the object</param>
+	<param name="texture">texture used to draw the object</param>
+	<param name="moveSpeed">the constant movement speed of the object in pixels-per-second</param>
+	<param name="isVisible">set true to indicate that this object will be visible</param>
+	<param name="isCenteredH">set true to indicate that the object will be created centered around the specified X</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.MoveableObject.#ctor(System.Int32,System.Int32,System.Drawing.Bitmap,System.Drawing.Rectangle,System.Double,System.Boolean,System.Boolean)">
+	<summary>
+ Constructs a bounded moveable object using the specified texture.
+ </summary>
+	<param name="x">x position of the object</param>
+	<param name="y">y position of the object</param>
+	<param name="texture">texture used to draw the object</param>
+	<param name="moveBounds">describes a rectangle in 2d space that the object will be restricted to</param>
+	<param name="moveSpeed">the constant movement speed of the object in pixels-per-second</param>
+	<param name="isVisible">set true to indicate that this object will be visible</param>
+	<param name="isCenteredH">set true to indicate that the object will be created centered around the specified X</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.MoveableObject.Reset">
+	<summary>
+ Overrides the reset method to also reset movement directions to none.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.MoveableObject.Update(System.Double)">
+	<summary>
+ Updates the object's position if it is moving in some direction.
+ </summary>
+	<param name="secsSinceLastFrame">the fractions of a second since the last call to this method</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.MoveableObject.SameHDirectionAs(FinalBreakout.MoveableObject)">
+	<summary>
+ Gets whether or not this object is moving in the same horizontal direction as the specified object.
+ </summary>
+	<param name="o">the moveable object to test direction against</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.MoveableObject.SameVDirectionAs(FinalBreakout.MoveableObject)">
+	<summary>
+ Gets whether or not this object is moving in the same vertical direction as the specified object.
+ </summary>
+	<param name="o">the moveable object to test direction against</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.MoveableObject.MoveAlongLineToward(System.Double,System.Double,System.Double)">
+	<summary>
+ Moves the object the specified distance along a line toward the specified destination.
+ </summary>
+	<param name="newX">new x position of the object</param>
+	<param name="newY">new y position of the object</param>
+	<param name="distance">the distance to move along the line</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.MoveableObject.ClipPositionToBounds">
+	<summary>
+ Tests whether the object is in its boundaries and adjusts position to the inside edge.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.CustomLevelsForm.SelectedLevels">
+	<summary>
+ Gets the array of selected that the user has selected.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.CustomLevelsForm.CustomLevelsForm_Load(System.Object,System.EventArgs)">
+	<summary>
+ Loads the level data into the listbox.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.CustomLevelsForm.BeginButton_Click(System.Object,System.EventArgs)">
+	<summary>
+ Builds the array of selected levels and closes the dialog.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.CustomLevelsForm.SelectAllButton_Click(System.Object,System.EventArgs)">
+	<summary>
+ Selects each element in the list.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.CustomLevelsForm.DeselectAllButton_Click(System.Object,System.EventArgs)">
+	<summary>
+ Deselects each element in the list.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.CustomLevelsForm.LevelListBox_SelectedIndexChanged(System.Object,System.EventArgs)">
+	<summary>
+ Displays a level preview when an element is selected.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.CustomLevelsForm.MoveDownButton_Click(System.Object,System.EventArgs)">
+	<summary>
+ Moves the selected element down in the list.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.CustomLevelsForm.MoveUpButton_Click(System.Object,System.EventArgs)">
+	<summary>
+ Moves the selected element in the list up.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.CustomLevelsForm.SetListCheckedState(System.Windows.Forms.CheckState)">
+	<summary>
+ Sets the check state of each of the list elements.
+ </summary>
+	<param name="state"></param>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.Ball.IsOutOfBounds">
+	<summary>
+ Gets a value indicating whether this ball is out of bounds.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.Ball.EdgeOOB">
+	<summary>
+ Gets or sets the edge that the ball is allowed to go through, causing it to be out of bounds.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.Ball.XStep">
+	<summary>
+ Gets or sets the number used to increase the horizontal step of the ball's movement. Valid
+ values are [0, Breakout.MaxBallStep].
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.Ball.YStep">
+	<summary>
+ Gets or sets the number used to increase the vertical step of the ball's movement. Valid
+ values are [0, Breakout.MaxBallStep].
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Ball.#ctor(System.Int32,System.Int32,System.Drawing.Bitmap,System.Drawing.Rectangle,System.Double,FinalBreakout.MoveableObject.Direction,FinalBreakout.GameObject.Edge,System.Boolean)">
+	<summary>
+ Constructs a new ball object.
+ </summary>
+	<param name="x">the x position of the ball</param>
+	<param name="y">the y position of the balle</param>
+	<param name="texture">the texture used to draw the ball</param>
+	<param name="bounds">the rectangle describing the movement boundaries of the ball</param>
+	<param name="speed">the movement speed of the ball in pixels per second</param>
+	<param name="initialDirection">describes the initial direction of the ball's movement</param>
+	<param name="oobEdge">specifies a boundary edge where the ball may go out of bounds</param>
+	<param name="isCenteredH">set true to indicate that the ball will be created centered around x</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Ball.Reset">
+	<summary>
+ Overrides the reset method to reset the direction of the ball, its angles, and speed multiplier,
+ and set it within bounds.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Ball.Update(System.Double)">
+	<summary>
+  Overrides the update method to move the ball along a line based on direction.
+ </summary>
+	<param name="secsSinceLastFrame">the fractions of a second since the last call to this method</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Ball.BounceH(FinalBreakout.MoveableObject.Direction)">
+	<summary>
+ Bounces the ball left or right.
+ </summary>
+	<param name="horizontalDirection">the new horizontal direction of the ball</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Ball.BounceV(FinalBreakout.MoveableObject.Direction)">
+	<summary>
+ Bounces the ball up or down.
+ </summary>
+	<param name="verticalDirection">the new vertical direction of the ball</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Ball.HandleBoundaryCollision">
+	<summary>
+ Tests collision with each boundary edge and causes ball to react.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.MainForm.TestLevel(FinalBreakout.BreakoutLevel)">
+	<summary>
+ Begins a new test session using the specified level.
+ </summary>
+	<param name="level">the level that is to be tested</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.MainForm.MainForm_Load(System.Object,System.EventArgs)">
+	<summary>
+ Initializes the form, display, and game.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.MainForm.MainForm_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+ Process form key down events.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.MainForm.MainForm_Shown(System.Object,System.EventArgs)">
+	<summary>
+ Once the form is shown then begin running the game.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.MainForm.MainForm_FormClosing(System.Object,System.Windows.Forms.FormClosingEventArgs)">
+	<summary>
+ When the form is closing then stop running the game.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.MainForm.MainForm_Resize(System.Object,System.EventArgs)">
+	<summary>
+ Handles change in form size.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.MainForm.MainForm_LostFocus(System.Object,System.EventArgs)">
+	<summary>
+ Pause if the form no longer has focus.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.MainForm.mGame_BeginAcceptingInput">
+	<summary>
+ Sets the mouse cursor's location to match the game's paddle.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.MainForm.mGame_SessionEnded(FinalBreakout.BreakoutGame.SessionType)">
+	<summary>
+ Handles a game session end.
+ </summary>
+	<param name="type"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.MainForm.mGame_EarnedHighScore(System.Int32,FinalBreakout.BreakoutGame.SessionType,FinalBreakout.BreakoutLevel)">
+	<summary>
+ Adds a new high score entry when the player earns a high score.
+ </summary>
+	<param name="score"></param>
+	<param name="sessionType"></param>
+	<param name="level"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.MainForm.mGame_ReadyToPresent">
+	<summary>
+ Updates the form for presentation to the player.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.MainForm.Render">
+	<summary>
+ Renders the game and displays to picture box.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.MainForm.UpdateSize">
+	<summary>
+ Updates the game display's size to match the form's client size, and updates the form's objects
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.MainForm.EnterFullscreen">
+	<summary>
+ Sets the form to display fullscreen.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.MainForm.ExitFullscreen">
+	<summary>
+ Sets the form to be displayed in windowed mode at its minimum size.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.MainForm.ControlMouse">
+	<summary>
+ Takes control of the mouse and clips its location to stay within the canvas space.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.MainForm.ReleaseMouse">
+	<summary>
+ Release control of the mouse.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.MainForm.PromptForNewGame">
+	<summary>
+ Prompts the user to begin a new game.
+ </summary>
+	<returns>true if user selects "Yes" or if there is no game active</returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.MainForm.PauseGame">
+	<summary>
+ Pauses the game and releases the mouse.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.MainForm.UnpauseGame">
+	<summary>
+ Unpauses the game and regains control of the mouse.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.MainForm.ViewFullscreenToolStripMenuItem_CheckStateChanged(System.Object,System.EventArgs)">
+	<summary>
+ Toggles fullscreen mode.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.MainForm.ShowFramerateToolStripMenuItem_CheckStateChanged(System.Object,System.EventArgs)">
+	<summary>
+ Toggle showing framerate.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.MainForm.OpenLevelDesignerToolStripMenuItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ Shows the level designer form.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.MainForm.AboutToolStripMenuItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ Shows the about form.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.MainForm.ExitToolStripMenuItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ Ends the application.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.MainForm.StartCustomSessionToolStripMenuItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ Prompts the user to choose custom levels then begins a game session with those levels.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.MainForm.StartNewSessionToolStripMenuItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ If another session is active then prompt user to start a new one. Then start a new 
+ normal game session.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.MainForm.PauseToolStripMenuItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ Toggle paused state.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.MainForm.EndSessionToolStripMenuItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ Ends an active session.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.MainForm.DisplayPictureBox_MouseMove(System.Object,System.Windows.Forms.MouseEventArgs)">
+	<summary>
+ Moves the game's paddle to the cursor position.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.MainForm.HighScoresToolStripMenuItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ Displays the high scores dialog.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.MainForm.mGame_PaddleSizeChanged">
+	<summary>
+ Updates the mouse clip region when the size of the paddle changes.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.MainForm.ClipMouseToPaddleSpace">
+	<summary>
+ Sets the mouse clip region to disallow the cursor from moving the paddle out of boundaries.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.MainForm.StartButton_Click(System.Object,System.EventArgs)">
+	<summary>
+ Starts a new normal session when the start button is clicked.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:FinalBreakout.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:FinalBreakout.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="P:FinalBreakout.Breakout.CustomLevelsDirectory">
+	<summary>
+ Gets the absolute path to the custom levels directory.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.Breakout.DefaultLevelsDirectory">
+	<summary>
+ Gets the absolute path of the default levels directory.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.Breakout.MaxBallStep">
+	<summary>
+ Gets the maximum step of the ball.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.Breakout.StartBallCount">
+	<summary>
+ Gets the number of balls to start with each game.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.Breakout.PowerupDropRate">
+	<summary>
+ Gets the drop rate percentage of a random powerup.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.Breakout.MaximumBallSpeedMultiplier">
+	<summary>
+ Gets the highest speed multiplier the ball may gain.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.Breakout.PointsPerBlock">
+	<summary>
+ Gets the default number of points to be given when a block is destroyed.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.Breakout.PowerupDropSpeed">
+	<summary>
+ Gets the speed of the powerups as they are dropping.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.Breakout.ScoreMultiplierMaximum">
+	<summary>
+ Gets the maximum number that the score multiplier can be.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.Breakout.MaxHighScoresPerLevel">
+	<summary>
+ Gets the maximum number of high scores stored by each level.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.Breakout.BlockImageMaximum">
+	<summary>
+ Gets the maximum index of available block images.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.Breakout.BackgroundImageMaximum">
+	<summary>
+ Gets the maximum index of available background images.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.Breakout.BlocksPerRow">
+	<summary>
+ Gets the number of blocks per blockrow.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.Breakout.RowsPerSet">
+	<summary>
+ Gets the number of rows per blockset.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.Breakout.BlockWidth">
+	<summary>
+ Gets the width of the block objects.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.Breakout.BlockHeight">
+	<summary>
+ Gets the height of the block objects.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.Breakout.CanvasBounds">
+	<summary>
+ Gets a rectangle describing the boundaries of the game canvas.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.Breakout.CanvasWidth">
+	<summary>
+ Gets the width of the game canvas.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.Breakout.CanvasHeight">
+	<summary>
+ Gets the height of the game canvas.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.Breakout.BallSpeed">
+	<summary>
+ Gets the movement speed of the ball in pixels per second.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Breakout.GetBlockImage(System.Int32)">
+	<summary>
+ Gets the block image at the specified index.
+ </summary>
+	<param name="index">index of the block image</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Breakout.GetBackgroundImage(System.Int32)">
+	<summary>
+ Gets the background image at the specified index.
+ </summary>
+	<param name="index">index of the background image</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Breakout.GetPaddleImage">
+	<summary>
+ Gets the image to be used for the paddle.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Breakout.GetBallImage">
+	<summary>
+ Gets the image to be used for the ball.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Breakout.GetPowerupImage(FinalBreakout.Powerup.PowerupType)">
+	<summary>
+ Gets the image of the specified powerup.
+ </summary>
+	<param name="powerup"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Breakout.GetDefaultLevels">
+	<summary>
+ Gets an array of default game levels for a normal game session.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Breakout.GetCustomLevels">
+	<summary>
+ Gets an array of custom game levels for a custom game session.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Breakout.GetGameHighScores">
+	<summary>
+ Returns the collection of high scores for a normal game session.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Breakout.SaveGameHighScores(FinalBreakout.HighScoresCollection)">
+	<summary>
+ Saves the collection of high scores for a normal game session.
+ </summary>
+	<param name="scores"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Breakout.GetRandomInt(System.Int32,System.Int32)">
+	<summary>
+ Returns a random integer between and including the min and max values.
+ </summary>
+	<param name="max">the maximum value that can be returned</param>
+	<param name="min">the minimum value that can be returned</param>
+	<returns>a random number between the min and max values</returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Breakout.GetRandomBool(System.Double)">
+	<summary>
+ Gets a random boolean value having the specified chance to be true.
+ </summary>
+	<param name="trueChance">the chance for the boolean to be true as a percentage, must be less than 1 and greater than 0</param>
+	<returns>a random boolean number</returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Breakout.Initialize">
+	<summary>
+ Initialize the module. This must be called before the module is used.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Breakout.InitPowerups">
+	<summary>
+ Initializes powerup images.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Breakout.InitBlocks">
+	<summary>
+ Initialize the block images and properties.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Breakout.InitBackground">
+	<summary>
+ Initializes the background images and canvas properties.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Breakout.LoadDefaultLevels">
+	<summary>
+ Loads the default game levels into the array.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Breakout.LoadCustomLevels">
+	<summary>
+ Loads the custom levels into the array.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:FinalBreakout.GameText.Animation.FadeOut">
+	<summary>
+ Causes the text to fade into transparency.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:FinalBreakout.GameText.Animation.FadeIn">
+	<summary>
+ Causes the text to fade in from transparency.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:FinalBreakout.GameText.Animation.Grow">
+	<summary>
+ Causes the text to grow to the maximum font size.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:FinalBreakout.GameText.Animation.Shrink">
+	<summary>
+ Causes the text to shrink to the minimum font size.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:FinalBreakout.GameText.Animation">
+	<summary>
+ Specifies the animation performed by the text.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.GameText.MinimumSize">
+	<summary>
+ Gets or sets the minimum font size of the text.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.GameText.DefaultSize">
+	<summary>
+ Gets or sets the default font size of the text but does not effect the current size.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.GameText.MaximumSize">
+	<summary>
+ Gets or sets the maximum font size of the text.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.GameText.IsAnimating">
+	<summary>
+ Gets whether the text is currently performing an animation or animation sequence.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.GameText.RepeatingAnimation">
+	<summary>
+ Gets whether the currently-performing animation or animation sequence is repeating.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.GameText.Text">
+	<summary>
+ Gets or sets the text displayed.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.GameText.Font">
+	<summary>
+ Gets or sets the font used to render the text.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.GameText.Color">
+	<summary>
+ Gets or sets the color used to draw the text.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.GameText.#ctor(System.Int32,System.Int32,System.String)">
+	<summary>
+ Constructs a new text object at the specified position.
+ </summary>
+	<param name="x">x position of the text</param>
+	<param name="y">y position of the text</param>
+	<param name="text">the text to display</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.GameText.#ctor(System.Int32,System.Int32,System.String,System.Double,System.Drawing.Rectangle)">
+	<summary>
+ Constructs a new text object with the specified movement speed and movement boundaries.
+ </summary>
+	<param name="x">x position of the text</param>
+	<param name="y">y position of the text</param>
+	<param name="text">the text to display</param>
+	<param name="moveSpeed">the movement speed of the text when it moves</param>
+	<param name="moveBounds">the movement boundaries of the text</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.GameText.#ctor(System.Int32,System.Int32,System.String,System.Drawing.Color,System.Drawing.Font)">
+	<summary>
+ Constructs a new text object with the specified color and font.
+ </summary>
+	<param name="x">x position of the text</param>
+	<param name="y">y position of the text</param>
+	<param name="text">the text to display</param>
+	<param name="color">the color of the text</param>
+	<param name="font">the font used to display the text</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.GameText.#ctor(System.Int32,System.Int32,System.String,System.Drawing.Color,System.Drawing.Font,System.Double)">
+	<summary>
+ Constructs a new text object with the specified color, font, and movement speed.
+ </summary>
+	<param name="x">x position of the text</param>
+	<param name="y">y position of the text</param>
+	<param name="text">the text to display</param>
+	<param name="color">the color of the text</param>
+	<param name="font">the font used to display the text</param>
+	<param name="moveSpeed">the movement speed of the text when it moves</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.GameText.#ctor(System.Int32,System.Int32,System.String,System.Double)">
+	<summary>
+ Constructs a new text object with the specified movement speed.
+ </summary>
+	<param name="x">x position of the text</param>
+	<param name="y">y position of the text</param>
+	<param name="text">the text to display</param>
+	<param name="moveSpeed">the movement speed of the text when it moves</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.GameText.#ctor(System.Int32,System.Int32,System.String,System.Drawing.Color,System.Drawing.Font,System.Double,System.Drawing.Rectangle)">
+	<summary>
+ Constructs a new text object with the specified color, font, movement speed, and movement boundaries.
+ </summary>
+	<param name="x">x position of the text</param>
+	<param name="y">y position of the text</param>
+	<param name="text">the text to display</param>
+	<param name="color">the color of the text</param>
+	<param name="font">the font used to display the text</param>
+	<param name="moveSpeed">the movement speed of the text when it moves</param>
+	<param name="moveBounds">the movement boundaries of the text</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.GameText.Draw(System.Drawing.Graphics)">
+	<summary>
+ Shadows the draw method to render text instead of an image.
+ </summary>
+	<param name="g"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.GameText.BeginAnimation(System.Double,FinalBreakout.GameText.Animation)">
+	<summary>
+ Causes the text to begin the specified animation if it is not currently animating.
+ </summary>
+	<param name="duration">the length of time in seconds over which the animation will take place</param>
+	<param name="animation">the animation that should be performed</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.GameText.BeginAnimation(System.Double,System.Boolean,FinalBreakout.GameText.Animation[])">
+	<summary>
+ Causes the text to begin the specified animation(s) at once if it is not currently animating.
+ </summary>
+	<param name="duration">the length of time in seconds over which the animation(s) will take place</param>
+	<param name="repeat">set true to indicate that the animation(s) will be repeated until explicitly stopped</param>
+	<param name="animations">the animation(s) that should be performede</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.GameText.BeginSequence(System.Double,System.Boolean,FinalBreakout.GameText.Animation[])">
+	<summary>
+ Causes the text to begin performing the specified sequence of animations if it is not currently animating.
+ </summary>
+	<param name="duration">the length of time in seconds over which each animation will take place</param>
+	<param name="repeat">set true to indicate that the animations will be repeated in sequence until explicitly stopped</param>
+	<param name="animSequence">the sequence of animations that should be performed</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.GameText.Reset">
+	<summary>
+ Stops animating, resets the text's size position to default, and makes it visible.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.GameText.Update(System.Double)">
+	<summary>
+ Updates the text's animation and position.
+ </summary>
+	<param name="secsSinceLastFrame">the fractions of a second since the last call to this method</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.GameText.StopAnimating">
+	<summary>
+ Forces the animation to stop immediately.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.GameText.StopRepeating">
+	<summary>
+ Causes the text to stop repeating once it finishes its current animation or animation sequence.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.GameText.StartNextInSequence">
+	<summary>
+ Activates the next animation in the animation sequence if it exists.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.GameText.StartAnimation(System.Double,FinalBreakout.GameText.Animation)">
+	<summary>
+ Sets the animation to be started.
+ </summary>
+	<param name="duration"></param>
+	<param name="anim"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.GameText.CalculateSize">
+	<summary>
+ Calculates the width and height of the object.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Paddle.#ctor(System.Int32,System.Int32,System.Drawing.Bitmap,System.Drawing.Rectangle,System.Double,System.Boolean)">
+	<summary>
+ Constructs a new paddle object.
+ </summary>
+	<param name="x">the x position of the paddle</param>
+	<param name="y">the y position of the paddle</param>
+	<param name="texture">the texture used to draw the paddle</param>
+	<param name="bounds">the rectangle describing the movement boundaries of the paddle</param>
+	<param name="speed">the movement speed of the paddle in pixels per second</param>
+	<param name="isCenteredH">set true to indicate that the paddle will be created centered around x</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Paddle.BeginMoving(FinalBreakout.MoveableObject.Direction)">
+	<summary>
+ Causes the paddle to begin moving in the specified direction.
+ </summary>
+	<param name="direction">the horizontal or vertical direction that the paddle will move</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Paddle.ResetSize">
+	<summary>
+ Resets the size of the paddle back to its original size.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Paddle.StopMoving(FinalBreakout.MoveableObject.Direction)">
+	<summary>
+ Causes the paddle to stop moving in the specified direction.
+ </summary>
+	<param name="direction">if the paddle is moving in this direction it will stop</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Paddle.SetHorizontalPosition(System.Int32,System.Boolean)">
+	<summary>
+ Sets the horizontal position of the paddle.
+ </summary>
+	<param name="x">the new x location of the paddle</param>
+	<param name="calculateDirection">set true to indicate that the paddle will determine its movement direction from the new value</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Paddle.SetVerticalPosition(System.Int32,System.Boolean)">
+	<summary>
+ Sets the vertical position of the paddle.
+ </summary>
+	<param name="y">the new y location of the paddle</param>
+	<param name="calculateDirection">set true to indicate that the paddle will determine its movement direction from the new value</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Paddle.Update(System.Double)">
+	<summary>
+ Overrides update method to make sure paddle does not move if it is not necessary.
+ </summary>
+	<param name="secsSinceLastFrame">the fractions of a second since last frame</param>
+	<remarks></remarks>
+</member><member name="T:FinalBreakout.GameObject.Edge">
+	<summary>
+ Describes which edge of an object.
+ </summary>
+	<remarks></remarks>
+</member><member name="E:FinalBreakout.GameObject.Resized">
+	<summary>
+ Raised when the object is resized.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.GameObject.X">
+	<summary>
+ Gets the X position of the object.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.GameObject.Y">
+	<summary>
+ Gets the Y position of the object.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.GameObject.Coordinates">
+	<summary>
+ Gets or sets the coordinates of the upper-left corner of the object.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.GameObject.DefaultX">
+	<summary>
+ Gets the default X position of the object. Only derived classes may access this property.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.GameObject.DefaultY">
+	<summary>
+ Gets the default Y position of the object. Only derived classes may access this property.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.GameObject.Width">
+	<summary>
+ Gets the width of the object. Only derived classes may change this property.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.GameObject.Height">
+	<summary>
+ Gets the height of the object. Only derived classes may change this property.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.GameObject.TopEdgeValue">
+	<summary>
+ Gets or sets the Y value of the top edge of the object.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.GameObject.CenterPoint">
+	<summary>
+ Gets a point describing the center of the object.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.GameObject.BottomEdgeValue">
+	<summary>
+ Gets or sets the Y value of the bottom edge of the object.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.GameObject.LeftEdgeValue">
+	<summary>
+ Gets or sets the X value of the left edge of the object.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.GameObject.RightEdgeValue">
+	<summary>
+ Gets or sets the X value of the right edge of the object.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.GameObject.Collidable">
+	<summary>
+ Gets or sets whether the object can collide with other collidable objects.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.GameObject.BoundRectangle">
+	<summary>
+ Gets a rectangle describing the bounds of the object.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.GameObject.Texture">
+	<summary>
+ Gets or sets the texture used to render the object, makes it visible, and sets object's width and height to the texture's.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.GameObject.BorderPen">
+	<summary>
+ Gets or sets the pen used to render the object's border. Only derived classes may access this property.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.GameObject.HasTexture">
+	<summary>
+ Returns whether or not the object has a texture available for rendering.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.GameObject.Visible">
+	<summary>
+ Gets or sets whether the object is visible.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.GameObject.BorderWidth">
+	<summary>
+ Gets or sets the width of the object's border.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.GameObject.BorderColor">
+	<summary>
+ Gets or sets the object's border color.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.GameObject.BorderVisible">
+	<summary>
+ Gets or sets whether the object's border is displayed.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.GameObject.#ctor">
+	<summary>
+ Constructs an invisible, non-collidable GameObject at 0,0
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.GameObject.#ctor(System.Int32,System.Int32)">
+	<summary>
+ Constructs an invisible GameObject with a position in the game.
+ </summary>
+	<param name="x">x position</param>
+	<param name="y">y position</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.GameObject.#ctor(System.Int32,System.Int32,System.Drawing.Bitmap,System.Boolean,System.Boolean)">
+	<summary>
+ Constructs a drawable GameObject with a position in the game and a size.
+ </summary>
+	<param name="x">x position</param>
+	<param name="y">y position</param>
+	<param name="texture">the image to display when drawing the object</param>
+	<param name="isVisible">set true to indicate that this object will be visible</param>
+	<param name="isCenteredH">set true to indicate that the object will be created centered around the specified X</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.GameObject.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Drawing.Bitmap,System.Boolean,System.Boolean)">
+	<summary>
+ Constructs a drawable GameObject with a position in the game and a size.
+ </summary>
+	<param name="x">x position</param>
+	<param name="y">y position</param>
+	<param name="width">width of the object in pixels</param>
+	<param name="height">height of the object in pixels</param>
+	<param name="texture">the image to display when drawing the object</param>
+	<param name="isVisible">set true to indicate that this object will be visible</param>
+	<param name="isCenteredH">set true to indicate that the object will be created centered around the specified X</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.GameObject.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean,System.Boolean)">
+	<summary>
+ Constructs a GameObject with a position in the game and a size.
+ </summary>
+	<param name="x">x position</param>
+	<param name="y">y position</param>
+	<param name="objectWidth">width of the object in pixels</param>
+	<param name="objectHeight">height of the object in pixels</param>
+	<param name="isVisible">set true to indicate that this object will be visible</param>
+	<param name="isCenteredH">set true to indicate that the object will be created centered around the specified X</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.GameObject.CenterH(System.Int32)">
+	<summary>
+ Center the object horizontally at the specified x position.
+ </summary>
+	<param name="centerX">the x position at which to center the object</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.GameObject.CenterV(System.Int32)">
+	<summary>
+ Center the object vertically at the specified y position.
+ </summary>
+	<param name="centerY">the y position at which to center the object</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.GameObject.Reset">
+	<summary>
+ Resets the object to its default position.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.GameObject.Show">
+	<summary>
+ Makes the object visible.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.GameObject.Hide">
+	<summary>
+ Makes the object invisible.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.GameObject.Draw(System.Drawing.Graphics,System.Boolean)">
+	<summary>
+ Renders the object.
+ </summary>
+	<param name="g">the graphics object used for rendering the game object</param>
+	<param name="borderOnly">set true to render only the object's border</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.GameObject.Draw(System.Drawing.Bitmap,System.Drawing.Graphics,System.Boolean)">
+	<summary>
+ Renders the object using the specified image.
+ </summary>
+	<param name="image">the image used to render the object</param>
+	<param name="g">the graphics object used for rendering the game object</param>
+	<param name="borderOnly">set true to render only the object's border</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.GameObject.CollidesWith(FinalBreakout.GameObject)">
+	<summary>
+ Tests whether this object collides with the specified game object.
+ </summary>
+	<param name="o">the object with which to test collision</param>
+	<returns>true if the objects collide, false otherwise</returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.GameObject.GetEdgeCollidingWith(FinalBreakout.GameObject,System.Boolean)">
+	<summary>
+ Gets the edge of this object to which the colliding object is closest, if the objects are colliding.
+ </summary>
+	<param name="o">the object with which to test collision</param>
+	<param name="testMovementToward">specify true to indicate that the collision will only be detected if the specified object is moving toward this object</param>
+	<returns>the edge closest to the collision, or Edge.None if no collision occurs.</returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.GameObject.ScaleWidth(System.Single)">
+	<summary>
+ Scales the width of the object by the specified scale factor.
+ </summary>
+	<param name="scaleFactor">amount by which the width will be scaled</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.GameObject.ScaleHeight(System.Single)">
+	<summary>
+ Scales the height of the object by the specified scale factor.
+ </summary>
+	<param name="scaleFactor">amount by which the width will be scaled</param>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.HighScoresForm.MaxHighScoresNormal">
+	<summary>
+ Gets the maximum number of normal session high scores supported by the form.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.HighScoresForm.MaxHighScoresCustom">
+	<summary>
+ Gets the maximum number of custom session high scores supported by the form.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.HighScoresForm.HighScoresForm_Load(System.Object,System.EventArgs)">
+	<summary>
+ Loads the high scores into the form to be displayed.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.HighScoresForm.InitNormalScores">
+	<summary>
+ Initialize the normal session scores.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.HighScoresForm.ShowDialog">
+	<summary>
+ Overloads the ShowDialog method to display scores with no highlighting.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.HighScoresForm.ShowDialog(System.Int32)">
+	<summary>
+ Overloads the ShowDialog method to highlight the high score entry at the specified index.
+ </summary>
+	<param name="index">the index of the entry to highlight</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.HighScoresForm.ShowDialog(System.Int32,FinalBreakout.BreakoutLevel)">
+	<summary>
+ Overloads the ShowDialog method to highlight the high score entry at the specified index on the
+ specified level.
+ </summary>
+	<param name="index">the index of the entry to highlight</param>
+	<param name="level">the level to which the highscore belongs</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.HighScoresForm.SetEntryColor(System.Int32,System.Drawing.Color,System.Boolean)">
+	<summary>
+ Sets the forecolor of the entry specified by the index to the specified color.
+ </summary>
+	<param name="index"></param>
+	<param name="c"></param>
+	<param name="isCustom">specifies whether the entry is for a custom level</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.HighScoresForm.SetEntry(System.Int32,FinalBreakout.HighScoresCollection.HighScore,System.Boolean)">
+	<summary>
+ Displays the specified score at the normal game session entry specified by the index.
+ </summary>
+	<param name="index">index of the score in the collection and form</param>
+	<param name="score">score object</param>
+	<param name="isCustom">true if the score should be displayed as a custom level score</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.HighScoresForm.LevelListBox_SelectedIndexChanged(System.Object,System.EventArgs)">
+	<summary>
+ Loads the scores when a level is selected.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.HighScoresForm.InitCustomScores(System.Int32)">
+	<summary>
+ Initialize the display of the scores at the specified index in the listbox.
+ </summary>
+	<param name="index"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.HighScoresForm.OkButton_Click(System.Object,System.EventArgs)">
+	<summary>
+ Closes the form when the ok button is pressed.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.HighScoresForm.ClearAllButton_Click(System.Object,System.EventArgs)">
+	<summary>
+ Prompts the user to continue then clears every high score entry.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="F:FinalBreakout.BlockRow.BlockActionRequest.action">
+	<summary>
+ The action that should be performed on a block.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:FinalBreakout.BlockRow.BlockActionRequest.collidingObject">
+	<summary>
+ Object to test for collision if onlyIfCollides is set to true. Not required if onlyIfCollides
+ is false and blockIndex is specified.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:FinalBreakout.BlockRow.BlockActionRequest.onlyIfCollides">
+	<summary>
+ Indicates that the action will only be performed if collidingObject collides with a block.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:FinalBreakout.BlockRow.BlockActionRequest.blockIndex">
+	<summary>
+ The index of the block on which to perform the action regardless of collision. Not
+ required if onlyIfCollides is true.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:FinalBreakout.BlockRow.BlockActionRequest">
+	<summary>
+ Used to pass a requested action to a block.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:FinalBreakout.BlockRow.BlockActionResponse.succeeded">
+	<summary>
+ Whether the action was successful. If false all other values are undefined.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:FinalBreakout.BlockRow.BlockActionResponse.blockIndex">
+	<summary>
+ Index of the block affected by the action if succeeded is true.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:FinalBreakout.BlockRow.BlockActionResponse.blockCoord">
+	<summary>
+ The affected block's location if succeeded is true.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:FinalBreakout.BlockRow.BlockActionResponse.collisionEdge">
+	<summary>
+ Stores the edge nearest the collision, if a collision has occurred.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:FinalBreakout.BlockRow.BlockActionResponse.changeInSolidBlocks">
+	<summary>
+ The change, if any, in solid blocks in the row.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:FinalBreakout.BlockRow.BlockActionResponse">
+	<summary>
+ Used to return information about a block action request.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.BlockRow.NumSolidBlocks">
+	<summary>
+ Gets the number of blocks in the row that are non-empty.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.BlockRow.NumEmptyBlocks">
+	<summary>
+ Gets the number of empty blocks in the row.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.BlockRow.NumInitializedBlocks">
+	<summary>
+ Gets the number of initialized, empty and nonempty blocks in the row.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.BlockRow.MaxBlockIndex">
+	<summary>
+ Get the maximum index of accessible blocks in the array.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BlockRow.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+	<summary>
+ Constructs a new row of empty blocks.
+ </summary>
+	<param name="x">x position to be the center of the row</param>
+	<param name="y">y position of the top of the row</param>
+	<param name="maxBlocks">the maximum number of blocks allowed in the row</param>
+	<param name="blockWidth">width of each block</param>
+	<param name="blockHeight">height of each block</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BlockRow.InitializeBlocks(System.Int32)">
+	<summary>
+ Initializes the specified number of blocks as solid blocks.
+ </summary>
+	<param name="numBlocks">number of blocks to initialize</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BlockRow.Draw(System.Drawing.Bitmap,System.Drawing.Graphics)">
+	<summary>
+ Renders each block in the row.
+ </summary>
+	<param name="blockImage">image to use for each block</param>
+	<param name="g">graphics object used to render the set</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BlockRow.GetEmptyBlockIndices">
+	<summary>
+ Gets an array of the indices of the empty blocks in the row.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BlockRow.PerformBlockAction(FinalBreakout.BlockRow.BlockActionRequest)">
+	<summary>
+ Perform an action on some block in the row.
+ </summary>
+	<param name="request">BlockActionRequestParameters oject</param>
+	<returns>An action response</returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BlockRow.ReformRow">
+	<summary>
+ Creates MaximumBlocks number of blocks and centers the row.
+ </summary>
+	<remarks></remarks>
+</member><member name="E:FinalBreakout.BreakoutLevel.BlockEmpty">
+	<summary>
+ Raised when a single block becomes empty as the result of a performed action.
+ </summary>
+	<param name="blockLocation">the location of the emptied block in 2d space</param>
+	<param name="blockId">unique id number of the block in the blockset, from [0, MaximumBlocks - 1]</param>
+	<remarks></remarks>
+</member><member name="E:FinalBreakout.BreakoutLevel.BlockDestroyed">
+	<summary>
+ Raised when a single block is destroyed by collision.
+ </summary>
+	<param name="o">reference to the object that destroyed the block</param>
+	<param name="edgeOfCollision">the edge nearest the point of collision, if the block was emptied by collision</param>
+	<param name="blockRect">rectangle describing the position and size of the block destroyed</param>
+	<remarks></remarks>
+</member><member name="E:FinalBreakout.BreakoutLevel.BlockSolid">
+	<summary>
+ Raised when an empty block becomes solid as the result of a performed action.
+ </summary>
+	<param name="blockId">unique id number of the block in the blockset, from [0, MaximumBlocks - 1]</param>
+	<remarks></remarks>
+</member><member name="E:FinalBreakout.BreakoutLevel.BlockSetEmpty">
+	<summary>
+ Raised when the entire blockset becomes empty.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.BreakoutLevel.BlockStyle">
+	<summary>
+ Gets or sets the image style index of the level's blocks. Valid values in the range [0, Breakout.BlockImageMaximum].
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.BreakoutLevel.ShowBorder">
+	<summary>
+ Gets or sets a value indicating whether to show a border around the level.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.BreakoutLevel.Filename">
+	<summary>
+ Gets the name of the file in which the level is stored.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.BreakoutLevel.HighScores">
+	<summary>
+ Gets or sets the collection of high scores for this level.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.BreakoutLevel.BackgroundStyle">
+	<summary>
+ Gets or sets the image style index of the background. Valid values in the range [0, Breakout.BackgroundImageMaximum].
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.BreakoutLevel.BlockSet">
+	<summary>
+ Provides access to the level's current blockset.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.BreakoutLevel.LevelName">
+	<summary>
+ Gets or sets the name of the level.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.BreakoutLevel.AuthorName">
+	<summary>
+ Gets or sets the name of the level's author.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutLevel.Equals(System.Object)">
+	<summary>
+ Overrides the Equals function to return true when both levels are stored to the same file.
+ </summary>
+	<param name="obj"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutLevel.#ctor(System.Boolean)">
+	<summary>
+ Constructs an empty level.
+ </summary>
+	<param name="collideWithEmptyBlocks">set true to indicate that empty blocks will be collidable</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutLevel.#ctor(FinalBreakout.BreakoutLevel)">
+	<summary>
+ Constructs a new level from the specified level.
+ </summary>
+	<param name="prototype">level to use as a prototype for this level.</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutLevel.ToString">
+	<summary>
+ Overrides the ToString method to return the name of the level as its string representation.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutLevel.Reset">
+	<summary>
+ Resets the level's blockset to the last initialized pattern.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutLevel.GeneratePreview(System.Int32,System.Int32)">
+	<summary>
+ Generates a preview of the level, showing its background and blockset.
+ </summary>
+	<param name="width">width of the preview image</param>
+	<param name="height">height of the preview image</param>
+	<returns>bitmap displaying a preview of the level</returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutLevel.RenderLevel(System.Drawing.Graphics)">
+	<summary>
+ Renders the level.
+ </summary>
+	<param name="g">the graphics object used for rendering</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutLevel.Initialize(FinalBreakout.BlockSet.BlockSetPattern,System.Int32,System.Int32,System.String,System.String)">
+	<summary>
+ Initialize the level properties to the specified values.
+ </summary>
+	<param name="setPattern">the pattern to be displayed by the level's blockset</param>
+	<param name="blockStyle">the image style index of the blocks</param>
+	<param name="backStyle">the image style index of the background</param>
+	<param name="levelName">the name of the level</param>
+	<param name="authorName">the name of the author</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutLevel.SaveToXML(System.String,System.Boolean)">
+	<summary>
+ Saves the level to an XML file with the specified filename.
+ </summary>
+	<param name="filename">absolute filename of the file to save</param>
+	<param name="saveHighscores">set true to indicate that the high scores will be saved with the level</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutLevel.LoadFromXML(System.String)">
+	<summary>
+ Loads the level from an XML file with the specified filename.
+ </summary>
+	<param name="filename">absolute filename of the file to load</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutLevel.SaveHighScores(FinalBreakout.HighScoresCollection)">
+	<summary>
+ Reloads the blockset pattern and saves the specified collection of high scored to the level's file.
+ </summary>
+	<param name="scores">the collection of scores to be saved</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutLevel.mBlockSet_BlockDestroyed(FinalBreakout.GameObject@,FinalBreakout.GameObject.Edge,System.Drawing.Rectangle)">
+	<summary>
+ Raises event when a block is destroyed.
+ </summary>
+	<param name="o"></param>
+	<param name="edgeOfCollision"></param>
+	<param name="blockRect"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutLevel.mBlockSet_BlockEmptied(System.Drawing.Point,System.Int32)">
+	<summary>
+ Raises events when a block becomes empty and when all blocks are empty.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.BreakoutLevel.mBlockSet_BlockFilled(System.Int32)">
+	<summary>
+ Raises an event when an empty block becomes solid.
+ </summary>
+	<param name="blockId"></param>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.NewScoreEntryForm.Score">
+	<summary>
+ Gets or sets the value of the high score to be displayed when the form loads.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.NewScoreEntryForm.Level">
+	<summary>
+ Gets or sets the level to which the high score belongs. If nothing, the score is for a normal session.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.NewScoreEntryForm.EntryName">
+	<summary>
+ Returns the name entered by the user.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.NewScoreEntryForm.EntryIndex">
+	<summary>
+ Gets the index of the created score entry.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.NewScoreEntryForm.NameInputForm_FormClosing(System.Object,System.Windows.Forms.FormClosingEventArgs)">
+	<summary>
+ Stores the name entered by the user and saves the high score entry.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.NewScoreEntryForm.NameInputForm_Load(System.Object,System.EventArgs)">
+	<summary>
+ Initialize the form.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.NewScoreEntryForm.NewCustomEntry">
+	<summary>
+ Creates a new score entry in the custom level and returns its index.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.NewScoreEntryForm.NewNormalEntry">
+	<summary>
+ Creates a new score entry for a normal session and returns its index.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.NewScoreEntryForm.SaveScores">
+	<summary>
+ Saves the score collection. 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.NewScoreEntryForm.AcceptInput">
+	<summary>
+ Validates the text in the name text box and sets the NameString property.
+ </summary>
+	<remarks></remarks>
+	<returns>true if name is valid, false otherwise</returns>
+</member><member name="M:FinalBreakout.NewScoreEntryForm.IsInputValid(System.String)">
+	<summary>
+ Tests whether the specified string is valid input.
+ </summary>
+	<param name="text"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.NewScoreEntryForm.OkButton_Click(System.Object,System.EventArgs)">
+	<summary>
+ Accepts the name entered by the user.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="F:FinalBreakout.Block.Action.Destroy">
+	<summary>
+ Indicates that the block will be destroyed.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:FinalBreakout.Block.Action.SetEmpty">
+	<summary>
+ Indicates that the block will no longer be solid or collidable.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:FinalBreakout.Block.Action.SetSolid">
+	<summary>
+ Indicates that the block will become solid and collidable.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:FinalBreakout.Block.Action.ToggleEmpty">
+	<summary>
+ Toggles whether the block is solid but does not affect collision.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:FinalBreakout.Block.Action.Highlight">
+	<summary>
+ Highlights the block whether solid or empty.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:FinalBreakout.Block.Action.Unhighlight">
+	<summary>
+ Removes highlighting from the block.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:FinalBreakout.Block.Action">
+	<summary>
+ Actions that may be performed by block.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.Block.Empty">
+	<summary>
+ Gets or sets whether the block is empty.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.Block.Highlighted">
+	<summary>
+ Gets or sets whether the block is currently highlighted.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Block.#ctor(System.Int32,System.Int32)">
+	<summary>
+ Constructs a new block object.
+ </summary>
+	<param name="blockWidth">the width of the block object</param>
+	<param name="blockHeight">the height of the block object</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Block.Draw(System.Drawing.Bitmap,System.Drawing.Graphics)">
+	<summary>
+ Shadows the draw method to make sure the block is not drawn if it is empty.
+ </summary>
+	<param name="image"></param>
+	<param name="g"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Block.Initialize(System.Int32,System.Int32)">
+	<summary>
+ Initializes the block to make it solid and collidable, and moves it to the specified location.
+ </summary>
+	<param name="x">x position of the block</param>
+	<param name="y">y position of the block</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Block.PerformAction(FinalBreakout.Block.Action)">
+	<summary>
+ Perform the specified action.
+ </summary>
+	<param name="a">action to perform</param>
+	<returns>true if the action is successful, false otherwise</returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Block.Destroy">
+	<summary>
+ Destroys the block.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Block.SetSolid">
+	<summary>
+ Sets the block solid and collidable.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Block.ToggleEmpty">
+	<summary>
+ Toggles the value of the Empty property without affecting collision detection.
+ </summary>
+	<remarks></remarks>
+</member><member name="E:FinalBreakout.Powerup.Activated">
+	<summary>
+ Raised when the powerup becomes activated. This will not be raised if there is no time limit for the powerup.
+ </summary>
+	<remarks></remarks>
+</member><member name="E:FinalBreakout.Powerup.TimerTick">
+	<summary>
+ Raised each second when the powerup timer ticks.
+ </summary>
+	<remarks></remarks>
+</member><member name="E:FinalBreakout.Powerup.RequiresDeactivation">
+	<summary>
+ Raised when the timer is up and the powerup must be deactivated.
+ </summary>
+	<remarks></remarks>
+</member><member name="E:FinalBreakout.Powerup.Deactivated">
+	<summary>
+ Raised when the powerup is deactivated.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:FinalBreakout.Powerup.PowerupType">
+	<summary>
+ The powerups that the player may collect.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.Powerup.Type">
+	<summary>
+ Gets the type of this powerup.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.Powerup.HasTimeLimit">
+	<summary>
+ Gets a value indicating whether the powerup has a time limit.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.Powerup.TimeRemaining">
+	<summary>
+ Gets the number of seconds remaining for the powerup.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.Powerup.PointValue">
+	<summary>
+ Gets the number of points to be awarded for capturing the powerup.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.Powerup.TimeLimit">
+	<summary>
+ Gets the time limit of the powerup.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:FinalBreakout.Powerup.IsActivated">
+	<summary>
+ Gets a value indicating whether the powerup is active.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Powerup.#ctor(FinalBreakout.Powerup.PowerupType,System.Double,System.Int32)">
+	<summary>
+ Constructs a new powerup of the specified type.
+ </summary>
+	<param name="type">the type of this powerup</param>
+	<param name="timeLimit">the number of seconds the powerup will stay active, if 0 then the powerup does not stay active</param>
+	<param name="pointValue">the number of points the powerup is worth</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Powerup.Create(FinalBreakout.Powerup.PowerupType)">
+	<summary>
+ Creates a new powerup of the specified type.
+ </summary>
+	<param name="type">the type of powerup to create</param>
+	<returns>a powerup object of the specified type</returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Powerup.CreateRandom">
+	<summary>
+ Creates a new powerup of a random type.
+ </summary>
+	<returns>a powerup object of a random type</returns>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Powerup.Reset">
+	<summary>
+ Overrides the Reset method to be sure the powerup stays hidden.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Powerup.Draw(System.Drawing.Graphics)">
+	<summary>
+ Shadows the draw method to draw the correct powerup image.
+ </summary>
+	<param name="g"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Powerup.Update(System.Double)">
+	<summary>
+ Overrides the update method to update the timer if necessary.
+ </summary>
+	<param name="secsSinceLastFrame"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Powerup.Activate(FinalBreakout.BreakoutGame@)">
+	<summary>
+ Activates the powerup.
+ </summary>
+	<param name="game">reference to the game object activating the powerup</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Powerup.Deactivate(FinalBreakout.BreakoutGame@)">
+	<summary>
+ Deactivates the powerup.
+ </summary>
+	<param name="game">reference to the game object deactivating the powerup</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.Powerup.UpdateTimer(System.Double)">
+	<summary>
+ Updates the timer and deactivates the powerup if necessary.
+ </summary>
+	<param name="secsSinceLastFrame"></param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.SpeedUpPowerup.#ctor">
+	<summary>
+ Constructs a new SpeedUp powerup.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.SpeedUpPowerup.Activate(FinalBreakout.BreakoutGame@)">
+	<summary>
+ Overrides the Activate method to activate the powerup.
+ </summary>
+	<param name="game">reference to the game object activating the powerup</param>
+	<remarks></remarks>
+</member><member name="M:FinalBreakout.SpeedUpPowerup.Deactivate(FinalBreakout.BreakoutGame@)">
+	<summary>
+ Overrides the Deactivate method to deactivate the powerup.
+ </summary>
+	<param name="game">reference to the game object deactivating the powerup</param>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

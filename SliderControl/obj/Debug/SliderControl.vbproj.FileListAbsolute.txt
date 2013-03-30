@@ -1,0 +1,20 @@
+C:\Users\Mike\Documents\Visual Studio 2008\Projects\SliderControl\SliderControl\bin\Debug\SliderControl.dll
+C:\Users\Mike\Documents\Visual Studio 2008\Projects\SliderControl\SliderControl\bin\Debug\SliderControl.pdb
+C:\Users\Mike\Documents\Visual Studio 2008\Projects\SliderControl\SliderControl\bin\Debug\SliderControl.xml
+C:\Users\Mike\Documents\Visual Studio 2008\Projects\SliderControl\SliderControl\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Mike\Documents\Visual Studio 2008\Projects\SliderControl\SliderControl\obj\Debug\SliderControl.Resources.resources
+C:\Users\Mike\Documents\Visual Studio 2008\Projects\SliderControl\SliderControl\obj\Debug\SliderControl.NumberSlider.resources
+C:\Users\Mike\Documents\Visual Studio 2008\Projects\SliderControl\SliderControl\obj\Debug\SliderControl.vbproj.GenerateResource.Cache
+C:\Users\Mike\Documents\Visual Studio 2008\Projects\SliderControl\SliderControl\obj\Debug\SliderControl.dll
+C:\Users\Mike\Documents\Visual Studio 2008\Projects\SliderControl\SliderControl\obj\Debug\SliderControl.xml
+C:\Users\Mike\Documents\Visual Studio 2008\Projects\SliderControl\SliderControl\obj\Debug\SliderControl.pdb
+C:\Users\Mike\Breakout\FinalBreakout\bin\SliderControl.dll
+C:\Users\Mike\Breakout\FinalBreakout\bin\SliderControl.pdb
+C:\Users\Mike\Breakout\FinalBreakout\bin\SliderControl.xml
+C:\Users\Mike\Breakout\SliderControl\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Mike\Breakout\SliderControl\obj\Debug\SliderControl.Resources.resources
+C:\Users\Mike\Breakout\SliderControl\obj\Debug\SliderControl.NumberSlider.resources
+C:\Users\Mike\Breakout\SliderControl\obj\Debug\SliderControl.vbproj.GenerateResource.Cache
+C:\Users\Mike\Breakout\SliderControl\obj\Debug\SliderControl.dll
+C:\Users\Mike\Breakout\SliderControl\obj\Debug\SliderControl.xml
+C:\Users\Mike\Breakout\SliderControl\obj\Debug\SliderControl.pdb
